@@ -80,3 +80,13 @@ export interface iconAttributes {
   icon: string;
   className?: string;
 }
+
+export interface globalUseContextStateAttributes {
+  state: initialStateAttributes;
+}
+
+export interface initialStateAttributes {
+  user: null;
+  accessToken: string;
+  isLoading: boolean
+}

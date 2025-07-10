@@ -1,20 +1,16 @@
-import { createContext, useEffect, useReducer } from "react";
-import {
-  globalUseContextStateAttributes,
-  initialStateAttributes,
-  layoutAttributes,
-  productsAttrubutes,
-} from "../utilities/typedeclaration";
+import { createContext, useReducer } from "react";
+
 import Reducer from "./reducer";
+import { globalUseContextStateAttributes, initialStateAttributes, layoutAttributes } from "../utilities/typedeclaration";
 
 const intialState: initialStateAttributes = {
   user: null,
-  isToastState: { state: false, text: "" },
+  accessToken: "",
+  isLoading : false,
 };
 
 export const GlobalUseContext = createContext<globalUseContextStateAttributes>({
   state: intialState,
-  dispatch: () => {},
 });
 
 export const GlobalUseContextProvider = ({ children }: layoutAttributes) => {
@@ -24,7 +20,6 @@ export const GlobalUseContextProvider = ({ children }: layoutAttributes) => {
     <GlobalUseContext.Provider
       value={{
         state,
-        dispatch,
       }}
     >
       {children}
