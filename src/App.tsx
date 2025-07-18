@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import TrendingTags from "./pages/trendingTags";
+import DashboardPage from "./pages/dashboard";
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<TrendingTags />} />
+        <Route path="/" element={<DashboardPage />} />
       </Routes>
     </BrowserRouter>
   );

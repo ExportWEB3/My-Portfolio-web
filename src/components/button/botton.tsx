@@ -24,7 +24,7 @@ export function ButtonComponent(props: buttonAttributes) {
   );
 }
 
-export function CustomButtonComponent(props: CustomButtonAttributes) {
+export function Button(props: CustomButtonAttributes) {
   const { onClick, btnText, link, type, className, isHoverEffect } = props;
   const [btnComponentState, setBTNComponentState] = useState<{
     isHover: boolean;
@@ -73,7 +73,7 @@ export function CustomButtonComponent(props: CustomButtonAttributes) {
           onMouseEnter={() => handlHoverEffect({ eventType: "mouse_enter" })}
           onMouseLeave={() => handlHoverEffect({ eventType: "mouse_leave" })}
           type={type}
-          className={`w-60 h-16 text-white text-xl font-semibold rounded-md bg-blue-800
+          className={` text-xl font-semibold rounded-md
             ${
               isHoverEffect && btnComponentState?.isHover && "bg-black"
             } ${className}`}

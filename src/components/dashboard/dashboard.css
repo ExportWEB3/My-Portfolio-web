@@ -1,0 +1,45 @@
+.heightF{
+  height: 550px;
+  background: linear-gradient(to bottom, #000000 0%, #2a2a2a 40%, #1e1c1c 70%, #000 100%);
+}
+.fontBtn{
+  font-size: 15px;
+}
+.btnGrad{
+background: #262626;
+background: linear-gradient(90deg, rgba(38, 38, 38, 1) 0%, rgba(0, 0, 0, 1) 55%, rgba(79, 79, 79, 1) 100%);
+transition: ease 0.5s;
+}
+.btnGrad:hover{
+  transform: scale(1.05);
+}
+.exMargin{
+  margin-left: 500px;
+}
+.padding{
+  padding-top: 180px;
+}
+.textWds{
+  font-size: 55px;
+  line-height: 60px;
+}
+.padding01{
+  padding-top: 100px;
+}
+@keyframes rectMove {
+  0% {
+    clip-path: inset(0 100% 100% 0);
+  }
+  25% {
+    clip-path: inset(0 0 100% 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 100%);
+  }
+  75% {
+    clip-path: inset(100% 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 100% 100% 0);
+  }
+}

@@ -9,9 +9,9 @@
 }
 
 /* container */
-.customContainer {
+.Container {
   max-width: 2000px;
-  padding: 0px 40px;
+  padding: 0px 100px;
 }
 
 /* ends */
@@ -63,3 +63,47 @@
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 /* shadow ends here */
+
+
+/* font family starts here */
+.font1 {
+  font-family: "Times New Roman", Times, serif;
+}
+.font2{
+  font-family: "Courier New", Courier, monospace;
+}
+.font3{
+  font-family: "Arial", sans-serif;
+}
+.font4{
+  font-family: "Georgia", serif;
+}
+.font5{
+  font-family: "Verdana", sans-serif;
+}
+.font6{
+  font-family: "Tahoma", sans-serif;
+}
+.font7{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.font8{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.font9{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+
+}
+.font10{
+  font-family: 'Impact', sans-serif;
+}
+.font11{
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+.font12{
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+.font12{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* font family ends here */

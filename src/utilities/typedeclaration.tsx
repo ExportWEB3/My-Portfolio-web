@@ -11,6 +11,9 @@ export interface divAttributes {
   id?: string;
   onClick?: React.MouseEventHandler<HTMLDivElement>;
   style?: React.CSSProperties;
+  onMouseEnter?: React.MouseEventHandler<HTMLDivElement>;
+  onMouseLeave?: React.MouseEventHandler<HTMLDivElement>;
+  onMouseMove?: React.MouseEventHandler<HTMLDivElement>;
 }
 
 export interface buttonAttributes {
