@@ -26,6 +26,16 @@ transition: ease 0.5s;
 .padding01{
   padding-top: 100px;
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(70px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @keyframes rectMove {
   0% {
     clip-path: inset(0 100% 100% 0);
