@@ -23,3 +23,42 @@
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+
+  .padding01 {
+    padding-top: 50px;
+  }
+  .questionDiv{
+    width: 100%;
+  }
+  .questionDivTxt{
+    font-size: 40px !important;
+  }
+  .questionDivTxtSpan{
+    width: 10px;
+    height: 10px;
+  }
+  .questionsAnsDiv{
+    height: 200px;
+    gap: 5px !important;
+    padding-top: 30px !important;
+    margin-top: 20px;
+  }
+  .questionsAnsDivInner{
+    margin-left: -5px !important; 
+    width: 100% !important;
+  }
+  .questionsAnsDivInnerTxt{
+    font-size: 20px !important;
+    margin-top: -10px !important;
+    line-height: 30px;
+  }
+  .questionsAnsDivInnerContent{
+    margin-top: -50px !important;
+  }
+  .questionsAnsDivInnerContentTxt{
+    font-size: 15px !important;
+    line-height: 20px;
+  }
+}

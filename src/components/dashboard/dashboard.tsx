@@ -250,7 +250,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
   title={
     <Div className="w-full h-full ">
       <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">Digital Web Development</h3>
-      <Div className="flex gap-4 digiDivMainBtnDiv">
+      <Div className="flex ">
         <Div className="space-x-4">
           <button className="px-6 digiDivMainBtn py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Portfolio Websites
@@ -295,7 +295,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
   title={
     <Div className="w-full h-full ">
       <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">UI Kits & Design Systems</h3>
-      <div className="flex gap-4 digiDivMainBtnDiv">
+      <div className="flex ">
         <Div className="space-x-4">
           <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
           Framer/Figma UI Kits
@@ -317,7 +317,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
     </Div>
   }
 >
-  <div>
+  <div className="expandToggleBox">
     <p>Custom-built systems that make your design process faster, more consistent, and easier to scale with your product.</p>
   </div>
 </ToggleBox>
@@ -339,7 +339,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
   title={
     <Div className="w-full h-full ">
       <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">Landing Page Development</h3>
-      <div className="flex gap-4">
+      <div className="flex ">
         <Div className="space-x-4">
                   <button className="px-6 digiDivMainBtn py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Lead Generation Pages
@@ -360,7 +360,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
     </Div>
   }
 >
-  <div className="text-white">
+  <div className="text-white expandToggleBox">
     <p>Strategic, conversion-focused landing pages designed to capture attention and turn visitors into customers.</p>
   </div>
 </ToggleBox>
@@ -370,7 +370,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </Div>
         </Div>
 
-                <Div className="w-full h-72 -mt-20 bg-black Container containerCustom">
+                <Div className="w-full h-72 -mt-20 bg-black Container containerCustom ">
           <Div className="w-full h-full padding01 flex space-x-28 digiDiv2" animateOnView>
             <p className="text-white text-4xl">04</p>
             <Div className="flex-1 h-full relative overflow-hidden digiDivMain">
@@ -382,7 +382,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
   title={
     <Div className="w-full h-full ">
       <h3 className="text-3xl font-medium mb-6 -mt-3 digiDivMainTxt">Design Templates</h3>
-      <div className="flex gap-4">
+      <div className="flex ">
         <Div className="space-x-4">
           <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
           Portfolio Templates
@@ -403,7 +403,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
     </Div>
   }
 >
-  <div className="text-white">
+  <div className="text-white expandToggleBox">
     <p>Fully responsive and easily customizable Framer templates, crafted to help you launch quickly without sacrificing design quality.</p>
   </div>
 </ToggleBox>
@@ -413,14 +413,14 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </Div>
         </Div>
 
-        <Div className="w-full h-h1100 bg-black padding Container">
-          <Div className="w-full h-28 mt-10 flex relative items-end" animateOnView>
-            <h1 className="text-8xl font-medium tracking-tighter text-gray-400">Recent <a className="text-white">Works</a></h1>
+        <Div className="w-full h-h1100 bg-black padding Container containerCustomX">
+          <Div className="w-full h-28 mt-10 flex relative items-end recentDiv" animateOnView>
+            <h1 className="text-8xl font-medium tracking-tighter text-gray-400 recentDivTxt">Recent <a className="text-white">Works.</a></h1>
             <p className="text-gray-400 absolute right-0">(  Projects )</p>
           </Div>
-          <Div className="w-full h-h700 flex mt-20 gap-5">
+          <Div className="w-full h-h700 flex mt-20 gap-5 projectDivHover">
 
-            <Div className="w-1/2 h-full relative group" onClick={handleRedirect}>
+            <Div className="w-1/2 h-full relative group projectDivHover1" onClick={handleRedirect}>
                           <ExploreProjectHover />
             <video
               src="src/videos/TildetteProject.webm"
@@ -441,16 +441,16 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
             <button className="px-6 py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
           Tailwind / Css
         </button>
-                <button className="px-6 py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+                <button className="px-6 hiddenHoverBtnP py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
           Animate.Css
         </button>
-                <button className="px-6 py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+                <button className="px-6 py-2 hiddenHoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
           Landing Page
         </button>
             </Div>
             </Div>
 
-            <Div className="w-1/2 h-full relative group" onClick={handleRedirect}>
+            <Div className="w-1/2 h-full relative group projectDivHover2" onClick={handleRedirect}>
                           <ExploreProjectHover />
             <div className="w-full h-h380 mt-16 relative group">
               <img src="src/images/signUp.png" className="w-full h-h380 mt-16" />
@@ -466,10 +466,10 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
                 <button className="px-6 py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
                   Notification
                 </button>
-                <button className="px-6 py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+                <button className="px-6 py-2 hiddenHoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
                   OTP integration
                 </button>
-                <button className="px-6 py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+                <button className="px-6 py-2 hiddenHoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
                   Register/Login Page
                 </button>
               </Div>
@@ -478,9 +478,9 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </Div>
         </Div>
 
-<Div className="w-full h-72 bg-black Container flex items-center ">
-  <Div className="w-full h-14 group" animateOnView>
-    <p className="text-3xl font-medium tracking-tighter text-gray-400 group-hover:text-white transition-colors duration-200">
+<Div className="w-full h-72 bg-black Container flex items-center containerCustomX ">
+  <Div className="w-full h-14 group seeAllPDiv" animateOnView>
+    <p className="text-3xl font-medium seeAllPDivTxt tracking-tighter text-gray-400 group-hover:text-white transition-colors duration-200">
       See all Projects
     </p>
     <hr className="border-gray-400 group-hover:border-white transition-colors duration-200 mt-3" />

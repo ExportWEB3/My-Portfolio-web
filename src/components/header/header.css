@@ -20,3 +20,15 @@
 .zindex{
     z-index: 1000;
 }
+
+@media screen and (max-width: 768px) {
+  .export {
+    font-size: 35px;
+  }
+    .containerCustomX{
+    max-width: 100%;
+    padding: 0px 6px;
+    height: auto;
+  }
+  
+}

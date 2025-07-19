@@ -78,6 +78,11 @@ transition: ease 0.5s;
     padding: 0px 6px;
     height: auto;
   }
+  .containerCustomX{
+    max-width: 100%;
+    padding: 0px 6px;
+    height: auto;
+  }
   .containerResX{
     max-width: 100%;
     padding: 0 6px;
@@ -218,6 +223,7 @@ transition: ease 0.5s;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 60px;
   }
   .getDivTxt{
     margin-left: 0px;
@@ -264,7 +270,36 @@ transition: ease 0.5s;
  }
   
   .expandToggleBox{
-    background-color: wheat;
+    margin-top: -25px;
+  }
+  .recentDiv{
+    margin-top: 50px;
+  }
+  .recentDivTxt{
+    font-size: 32px;
+  }
+  .projectDivHover{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+  }
+  .projectDivHover1{
+    width: 100%;
+  }
+  .projectDivHover2{
+    width: 100%;
+    margin-top: 30px;
+    z-index: 10;
+  }
+  .hiddenHoverBtnP{
+    display: none;
+  }
+  .seeAllPDiv{
+    margin-top: 350px;
+  }
+  .seeAllPDivTxt{
+    font-size: 25px;
   }
 }
   

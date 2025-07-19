@@ -19,7 +19,7 @@ export function HeaderComponent () {
 
   return (
     <Div className="w-full bg-black px-6 md:px-24 py-4 flex items-center relative z-50">
-      <h1 className="export text-white font-extrabold text-2xl md:text-3xl" style={{ transform: "scaleY(0.7)" }}>
+      <h1 className="export text-white font-extrabold exportRes text-2xl md:text-3xl" style={{ transform: "scaleY(0.7)" }}>
         È×þÖR†
       </h1>
 
