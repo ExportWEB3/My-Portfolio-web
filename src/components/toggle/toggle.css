@@ -1,0 +1,14 @@
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .absoToggle{
+        position: relative;
+    }
+    .relaToggle{
+        position: absolute;
+        top: 0 !important;
+        right: 0 !important;
+    }
+    .expandToggle{
+
+    }
+    
+}

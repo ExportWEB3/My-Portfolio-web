@@ -69,3 +69,23 @@
         display: none;
     }
 }
+
+
+
+
+@media screen and (min-width: 769px) {
+    .almLastDiv{
+        margin-top: 200px !important;
+    }
+    .smallFooterTxtDiv{
+        width: 105%;
+        margin-top: 100px;
+    }
+    .smallFooterTxt{
+        font-size: 150px !important;
+        line-height: 120px;
+    }
+    .hoverChangeDiv{
+        top: -65px;
+    }
+}

@@ -39,7 +39,7 @@ export function Footer () {
 
 
             <Div className="footBack w-full h-h950 bg-black Container flex flex-col items-center containerCustom">
-                <Div className="w-4/5 h-h500 mt-10 flex items-center justify-center relative containerCustom smallFooterTxtDiv">
+                <Div className=" h-h500 mt-10 flex items-center justify-center relative containerCustom smallFooterTxtDiv">
                     <p className="text-9xl text-center tracking-tight text-gray-400 smallFooterTxt">Every Success Starts with the First <a className="text-white">Step</a>
                                   <span className="ml-2">
             <span className="inline-block w-4 h-4 rounded-full bg-gray-500 animate-pulse animate-pulseX"></span>

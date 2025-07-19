@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, ReactNode } from "react";
+import "./toggle.css";
 
 export function ToggleBox({ children, title }: { children?: ReactNode; title?: ReactNode }) {
   const [expanded, setExpanded] = useState(false);
@@ -33,12 +34,12 @@ export function ToggleBox({ children, title }: { children?: ReactNode; title?: R
       }}
     >
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 cursor-pointer select-none">
+      <div className="flex items-center justify-between px-4 py-3 cursor-pointer select-none absoToggle">
         <div className="flex-1 tracking-tight text-gray-400 group-hover:text-white transition-colors duration-300">
           {title}
         </div>
         <span
-          className="transition-transform duration-700 ease-in-out inline-block"
+          className="transition-transform duration-700 ease-in-out inline-block relaToggle"
           style={{
             transform: expanded ? "rotate(1080deg)" : "rotate(0deg)",
           }}
@@ -61,7 +62,7 @@ export function ToggleBox({ children, title }: { children?: ReactNode; title?: R
       {/* Expanding Content */}
       <div
         ref={contentRef}
-        className="bg-black text-white px-4"
+        className="bg-black text-white px-4 expandToggle"
         style={{
           height: "auto",
           opacity: 0,

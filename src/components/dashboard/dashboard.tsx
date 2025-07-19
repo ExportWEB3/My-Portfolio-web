@@ -52,7 +52,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
             <p className="font-xs font-semibold text-gray-300">Web Developer</p>
           </Div>
 
-          <Div className="w-full h-16 mt-5 flex items-center">
+          <Div className="w-full h-16 mt-5 flex items-center ">
             <img src="src/images/user.webp" className="w-24" />
             <Div className="flex flex-col w-72 h-full">
               <p className="font-semibold text-xl text-white">Emmanuel O.</p>
@@ -250,24 +250,30 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
   title={
     <Div className="w-full h-full ">
       <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">Digital Web Development</h3>
-      <div className="flex gap-4 digiDivMainBtnDiv">
-        <button className="px-6 digiDivMainBtn py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
+      <Div className="flex gap-4 digiDivMainBtnDiv">
+        <Div className="space-x-4">
+          <button className="px-6 digiDivMainBtn py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Portfolio Websites
         </button>
-        <button className="px-6 py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
+        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Agency Websites
         </button>
-        <button className="px-6 py-2 rounded-full bg-black/80   border border-white/20 hover:bg-black/60 transition-all duration-200">
+        </Div>
+
+
+        <Div className="space-x-4">
+          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80   border border-white/20 hover:bg-black/60 transition-all duration-200">
           SaaS Websites
         </button>
-        <button className="px-6 py-2 rounded-full bg-black/80   border border-white/20 hover:bg-black/60 transition-all duration-200">
+        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80   border border-white/20 hover:bg-black/60 transition-all duration-200">
           Personal Branding Sites
         </button>
-      </div>
+        </Div>
+      </Div>
     </Div>
   }
 >
-  <div>
+  <div className="expandToggleBox">
     <p>I create polished digital experiences that align with your brand and engage your audience—across websites, apps, and marketing visuals.</p>
   </div>
 </ToggleBox>
@@ -277,31 +283,36 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </Div>
         </Div>
 
-                <Div className="w-full h-72 -mt-20 bg-black Container">
-          <Div className="w-full h-full padding01 flex space-x-28" animateOnView>
+                <Div className="w-full h-72 -mt-20 bg-black Container containerCustom">
+          <Div className="w-full h-full padding01 flex space-x-28 digiDiv2" animateOnView>
             <p className="text-white text-4xl">02</p>
-            <Div className="flex-1 h-full relative overflow-hidden">
+            <Div className="flex-1 h-full relative overflow-hidden digiDivMain">
               <Div
                 className=" top-0 left-0 w-full h-full flex bg-black"
                 style={{ zIndex: 2 }}
               >
 <ToggleBox
   title={
-    <Div className="w-full h-full">
-      <h3 className="text-3xl font-medium  mb-6 -mt-3">UI Kits & Design Systems</h3>
-      <div className="flex gap-4">
-        <button className="px-6 py-2 rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
+    <Div className="w-full h-full ">
+      <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">UI Kits & Design Systems</h3>
+      <div className="flex gap-4 digiDivMainBtnDiv">
+        <Div className="space-x-4">
+          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
           Framer/Figma UI Kits
         </button>
-        <button className="px-6 py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
+        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Design System for Agencies
         </button>
-        <button className="px-6 py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
+        </Div>
+        <Div className="space-x-4">
+          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Component Libraries
         </button>
-        <button className="px-6 py-2 rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
+        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
           Custom UI Kits
         </button>
+        </Div>
+
       </div>
     </Div>
   }
@@ -316,10 +327,10 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </Div>
         </Div>
 
-                <Div className="w-full h-72 -mt-20 bg-black Container">
-          <Div className="w-full h-full padding01 flex space-x-28" animateOnView>
+                <Div className="w-full h-72 -mt-20 bg-black Container containerCustom">
+          <Div className="w-full h-full padding01 flex space-x-28 digiDiv2" animateOnView>
             <p className="text-white text-4xl">03</p>
-            <Div className="flex-1 h-full relative overflow-hidden">
+            <Div className="flex-1 h-full relative overflow-hidden digiDivMain">
               <Div
                 className=" top-0 left-0 w-full h-full flex bg-black"
                 style={{ zIndex: 2 }}
@@ -327,20 +338,24 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
 <ToggleBox
   title={
     <Div className="w-full h-full ">
-      <h3 className="text-3xl font-medium  mb-6 -mt-3">Landing Page Development</h3>
+      <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">Landing Page Development</h3>
       <div className="flex gap-4">
-        <button className="px-6 py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
+        <Div className="space-x-4">
+                  <button className="px-6 digiDivMainBtn py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Lead Generation Pages
         </button>
-        <button className="px-6 py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
+        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Sales Pages
         </button>
-        <button className="px-6 py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
+        </Div>
+        <Div className="space-x-4">
+        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
          Product Launch Pages
         </button>
-        <button className="px-6 py-2 rounded-full bg-black/80   border border-white/20 hover:bg-black/60 transition-all duration-200">
+        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80   border border-white/20 hover:bg-black/60 transition-all duration-200">
           Market Campaign Pages
         </button>
+        </Div>
       </div>
     </Div>
   }
@@ -355,10 +370,10 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </Div>
         </Div>
 
-                <Div className="w-full h-72 -mt-20 bg-black Container">
-          <Div className="w-full h-full padding01 flex space-x-28" animateOnView>
+                <Div className="w-full h-72 -mt-20 bg-black Container containerCustom">
+          <Div className="w-full h-full padding01 flex space-x-28 digiDiv2" animateOnView>
             <p className="text-white text-4xl">04</p>
-            <Div className="flex-1 h-full relative overflow-hidden">
+            <Div className="flex-1 h-full relative overflow-hidden digiDivMain">
               <Div
                 className=" top-0 left-0 w-full h-full flex bg-black"
                 style={{ zIndex: 2 }}
@@ -366,17 +381,24 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
 <ToggleBox
   title={
     <Div className="w-full h-full ">
-      <h3 className="text-3xl font-medium mb-6 -mt-3">Design Templates</h3>
+      <h3 className="text-3xl font-medium mb-6 -mt-3 digiDivMainTxt">Design Templates</h3>
       <div className="flex gap-4">
-        <button className="px-6 py-2 rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
+        <Div className="space-x-4">
+          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
           Portfolio Templates
         </button>
-        <button className="px-6 py-2 rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
+        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
           Agency Templates
         </button>
-        <button className="px-6 py-2 rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
-          SaaS Templates
-        </button>
+        </Div>
+        <Div className="space-x-4">
+          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
+            Saas Templates
+          </button>
+          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
+            Board Templates
+          </button>
+        </Div>
       </div>
     </Div>
   }

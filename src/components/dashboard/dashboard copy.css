@@ -253,16 +253,11 @@ transition: ease 0.5s;
   .digiDivMainBtnDiv{
     height: 300px;
     width: 100%;
+    overflow-x: auto;
   }
   .digiDivMainTxt3{
     font-size: 25px;
   }
- .space-x-4{
-      overflow-x: auto;
-      display: flex;
-      flex-direction: column;
- }
-  
   .expandToggleBox{
     background-color: wheat;
   }
@@ -282,9 +277,6 @@ transition: ease 0.5s;
   }
   .availaRes{
     margin-top: 90px !important;
-  }
-  .aboutRes{
-    padding-top: 120px !important;
   }
   
 }
