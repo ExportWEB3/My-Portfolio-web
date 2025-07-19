@@ -9,6 +9,9 @@ import { ToggleBox } from "../toggle/toggle";
 import { ExploreProjectHover } from "../projectHover/hover";
 import { useInViewFade } from "../custom hooks/useInViewFade";
 import { PlusGridBackground } from "../gridBackground/gridBackground";
+import { Testimonials } from "../testimonials/testimonials";
+import { Questions } from "../questions/questions";
+import { Footer } from "../footer/footer";
 
 
 
@@ -34,9 +37,9 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
   return (
     <>
     <HeaderComponent />
-        <Div className=" bg-black h-screen w-full " >
-      <Div className="w-full Container heightF flex items-center" >
-        <Div className="w-w100 h-h270 bg-white rounded-xl p-0.5" animateOnView>
+        <Div className=" bg-black h-screen w-full responsive-main" >
+      <Div className="w-full Container containerRes heightF flex items-center" >
+        <Div className="w-w100 h-h270 bg-white cardRes rounded-xl p-0.5" animateOnView>
           <Div className="w-full bg-black rounded-xl px-5 py-2">
           <Div className="w-full h-10 flex items-center justify-between ">
             <Div className="flex space-x-2"> 
@@ -81,19 +84,19 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </Div>
         </Div>
 
-        <Div className="w-w130 h-56 ml-32 flex justify-center flex-col relative overflow-hidden" animateOnView>
+        <Div className="w-w130 h-56 ml-32 flex justify-center flex-col relative overflow-hidden moveRes" animateOnView>
           <div style={{ height: "100px", position: "relative" }}>
             <div style={{ position: "relative", height: "72px" }}>
               <h1
-                className={`text-6xl font-medium font12 text-gray-300 tracking-tighter absolute left-0 top-0 transition-all duration-500 ${
+                className={`text-6xl moveResTxt font-medium font12 text-gray-300 tracking-tighter absolute left-0 top-0 transition-all duration-500 ${
                   showAlt ? "-translate-x-full opacity-0" : "translate-x-0 opacity-100"
                 }`}
                 style={{ width: "100%", willChange: "transform, opacity" }}
               >
-                Build a website
+                Build a website that
               </h1>
               <h1
-                className={`text-6xl font-medium font12 text-gray-300 tracking-tighter absolute left-0 top-0 transition-all duration-500 ${
+                className={`text-6xl moveResTxt font-medium font12 text-gray-300 tracking-tighter absolute left-0 top-0 transition-all duration-500 ${
                   showAlt ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
                 }`}
                 style={{ width: "100%", willChange: "transform, opacity" }}
@@ -103,15 +106,15 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
               {/* Fixed green underline */}
               <span className="block w-32 h-1 mt-2 bg-green-500 rounded absolute left-0 bottom-0"></span>
             </div>
-            <h1 className="text-6xl font-medium font12 text-gray-300 tracking-tighter mt-2">
+            <h1 className="text-6xl moveResTxt font-medium font12 text-gray-300 tracking-tighter mt-2">
               <a className="text-white">stands out</a>---and sells.
             </h1>
           </div>
         </Div>
       </Div>
-      <Div className="w-full h-64 flex bg-black flex-col Container" > 
-        <Div className="w-full h-2/5 flex items-center mt-10" animateOnView>
-        <Div className="w-52 h-12 flex space-x-8">
+      <Div className="w-full h-64 flex bg-black flex-col Container containerResX  iconsTxtRes" > 
+        <Div className="w-full h-2/5 flex items-center mt-10 containerResX" animateOnView>
+        <Div className="w-52 h-12 flex space-x-8 iconTxtIconRes">
           {/* Social Icons */}
           <Div className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-lg bg-black/60 border border-white/10 group hover:bg-white transition-all ease-in-out duration-200">
             {/* LinkedIn SVG */}
@@ -132,25 +135,26 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
             </svg>
           </Div>
         </Div>
-        <Div className="w-w38 ml-80 h-full flex items-center">
-          <p className="text-gray-400">
+        <Div className="w-w38 ml-80 portRes h-full flex items-center">
+          <p className="text-gray-400 portResTxt">
             Welcome to my portfolio! Here you'll find a showcase of my latest projects, creative solutions, and passion for web development. I build modern, impactful websites that help brands and individuals stand out. Explore my work and let’s create something amazing together.
           </p>
         </Div>    
         </Div>
         <hr className="border-gray-800 my-4 mt-14" />
-        <Div className="w-full h-10 flex items-center ">
+        <Div className="w-full h-10 flex items-center res001">
           <p className="text-gray-400">001</p>
-          <Div className="exMargin flex-1 h-full flex relative">
+          <Div className="exMargin flex-1 h-full flex justify-between resHomeEx">
             <p className="text-gray-400">Home</p>
-            <p className="right-0 absolute text-gray-400">Export</p>
+            <p className=" text-gray-400">Export</p>
           </Div>
         </Div>
       </Div>
-      <Div className="w-full h-h350 Container bg-black padding space-y-10" >
+
+      <Div className="w-full h-h350 Container bg-black padding space-y-10 containerCustom aboutRes" >
         <p className="text-gray-400">(About)</p>
-        <Div className="w-3/5 h-32 relative flex items-center" animateOnView>
-          <p className="text-6xl font- text-gray-400 tracking-tighter relative inline-block">
+        <Div className="w-3/5 h-32 relative flex items-center aboutResTxtDiv" animateOnView>
+          <p className="text-6xl aboutResTxt text-gray-400 tracking-tighter relative inline-block">
             Crafting <span className="relative inline-block">
               <a className="text-white z-10 relative">Conversion-Focused</a>
               {/* Animated rectangle border */}
@@ -169,8 +173,8 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
         </Div>
       </Div>
 
-      <Div className="w-full h-96 bg-black Container flex items-end" >
-        <Div className="w-full h-1/2 flex items-center" animateOnView>
+      <Div className="w-full h-96 bg-black Container flex items-end containerCustom " >
+        <Div className="w-full h-1/2 flex items-center availaRes" animateOnView>
         <Div className="w-1/2 h-1/2 flex items-center">
         <img src="src/images/user.webp" className="w-24 -ml-5" />
         <Div className="w-40 h-12 flex flex-col">
@@ -183,7 +187,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </p>
         </Div>
         </Div>
-        <Div className="w-1/2 h-full space-y-5 py-5">
+        <Div className="w-1/2 h-full space-y-5 py-5 descDiv">
         <p className="text-gray-400">002</p>
         <p className="text-gray-400">I'm a web designer specializing in creating sleek, high-converting websites that turn visitors into clients. 
           I help freelancers and agencies elevate their online presence with clean, strategic designs that drive real results.</p>
@@ -191,50 +195,53 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
         </Div>
       </Div>
 
-      <Div className="w-full h-40 bg-black Container" >
+      <Div className="w-full h-40 bg-black Container containerCustom" >
           <p className="text-gray-400 tracking-tight">
             // Worked with companies like
           </p>
-          <Div className="w-full h-full flex items-center justify-center space-x-8" animateOnView>
+          <Div className="w-full h-full flex items-center justify-center space-x-8 logoDiv" animateOnView>
             {/* Example logos, replace src with your actual logo paths */}
-            <Div className="w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
+            <Div className="logoDivImg logoDivImg1 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
               <img src="src/images/ipsum.avif" alt="Logo 1" className="h-16 object-contain" />
             </Div>
-            <Div className="w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
+            <Div className="logoDivImg logoDivImg2 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
               <img src="src/images/loo.avif" alt="Logo 2" className="h-16 object-contain" />
             </Div>
-            <Div className="w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
+            <Div className="logoDivImg logoDivImg3 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
               <img src="src/images/framer.png" alt="Logo 3" className="h-10 object-contain" />
             </Div>
-            <Div className="w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
+            <Div className="logoDivImg logoDivImg4 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
               <img src="src/images/logoo.png" alt="Logo 4" className="h-8 object-contain" />
             </Div>
-            <Div className="w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
+            <Div className="logoDivImg logoDivImg5 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
               <img src="src/images/ipsumlog.png" alt="Logo 5" className="h-12 object-contain" />
+            </Div>
+            <Div className="logoDivImg logoDivImg6 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
+              <img src="src/images/ipsumlog.png" alt="Logo 6" className="h-12 object-contain" />
             </Div>
           </Div>
         </Div>
 
-        <Div className="w-full h-h450 bg-black Container flex relative">
-          <Div className="flex flex-col w-1/2 h-full justify-end space-y-10" animateOnView>
+        <Div className="w-full h-h450 bg-black Container flex relative containerCustom">
+          <Div className="flex flex-col w-1/2 h-full justify-end space-y-10 servDiv" animateOnView>
             <p className="text-gray-400">( Services )</p>
-          <Div className="w-full h-48 flexitems-end">
-          <p className="text-gray-400 textWds tracking-tight">Customized Web Design Solutions to Elevate Your Brand and <a className="text-white"> Drive Conversions.</a></p>
+          <Div className="w-full h-48 flexitems-end driveDiv">
+          <p className="text-gray-400 textWds tracking-tight driveDivTxt">Customized Web Design Solutions to Elevate Your Brand and <a className="text-white"> Drive Conversions.</a></p>
           </Div>
           </Div>
-          <Div className="w-1/2 h-20 flex justify-end items-center absolute bottom-0 right-24">
+          <Div className="w-1/2 h-20 flex justify-end items-center absolute bottom-0 right-24 driveDivBtnDiv">
           <Button
           type="button"
           btnText="Get In Touch"
-          className="h-10 w-40 fontBtn bg-black/60 hover:bg-white/10 transition-colors duration-200 border border-white/10 text-white"
+          className=" h-10 w-40 fontBtn bg-black/60 hover:bg-white/10 transition-colors duration-200 border border-white/10 text-white"
            />
           </Div>
         </Div>
 
-        <Div className="w-full h-72 bg-black Container">
-          <Div className="w-full h-full padding01 flex space-x-28" animateOnView>
+        <Div className="w-full h-72 bg-black Container containerCustom">
+          <Div className="w-full h-full padding01 flex space-x-28  digiDiv" animateOnView>
             <p className="text-white text-4xl">01</p>
-            <Div className="flex-1 h-full relative overflow-hidden">
+            <Div className="flex-1 h-full relative overflow-hidden digiDivMain">
               <Div
                 className=" top-0 left-0 w-full h-full flex bg-black hover:text-white"
                 style={{ zIndex: 2 }}
@@ -242,9 +249,9 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
 <ToggleBox
   title={
     <Div className="w-full h-full ">
-      <h3 className="text-3xl font-medium  mb-6 -mt-3">Digital Web Development</h3>
-      <div className="flex gap-4">
-        <button className="px-6 py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
+      <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">Digital Web Development</h3>
+      <div className="flex gap-4 digiDivMainBtnDiv">
+        <button className="px-6 digiDivMainBtn py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Portfolio Websites
         </button>
         <button className="px-6 py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
@@ -457,22 +464,23 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
     <hr className="border-gray-400 group-hover:border-white transition-colors duration-200 mt-3" />
   </Div>
 </Div>
-      <Div className="w-full h-40 bg-black Container flex items-end relative">
-        <Div className="w-full h-32 flex items-end" animateOnView>
+
+      <Div className="w-full h-40 bg-black Container flex items-end relative containerCustom">
+        <Div className="w-full h-32 flex items-end getDiv" animateOnView>
           <p className="text-gray-400">( Get Started )</p>
-          <h1 className="text-8xl text-white font-medium tracking-tighter ml-80">Process
+          <h1 className="text-8xl text-white font-medium tracking-tighter ml-80 getDivTxt">Process
                         <span className="ml-2">
               <span className="inline-block w-4 h-4 rounded-full bg-green-500 animate-pulse"></span>
             </span>
           </h1>
-          <p className="text-gray-400 absolute right-0">( Steps 1-4 )</p>
+          <p className="text-gray-400 absolute right-0 getDivTxtHide">( Steps 1-4 )</p>
         </Div>
       </Div>
 
-              <Div className="w-full h-h1900 relative z-10 bg-gray-300 flex items-center justify-center">
+              <Div className="w-full h-h1900 relative z-10 bg-black flex items-center justify-center containerCustom discoMainDiv">
                                 <PlusGridBackground />
-        <Div className="w-2/5 h-full z-20 flex items-center absolute ml-24 flex-col" >
-        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col space-y-7" animateOnView>
+        <Div className="w-2/5 h-full z-20 flex items-center absolute ml-24 flex-col discoDiv" >
+        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col space-y-7 blurDiscoDiv" animateOnView>
         <Div className="w-full h-12 flex justify-between">
           <p className="text-white text-4xl tracking-tighter">Discovery</p>
         </Div>
@@ -486,7 +494,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
          />
         </Div>
 
-        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col justify-between" animateOnView>
+        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col justify-between blurDiscoDiv" animateOnView>
         <Div className="w-full h-12 flex justify-between">
           <p className="text-white text-4xl tracking-tighter">OnBoarding</p>
         </Div>
@@ -495,7 +503,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
         </Div>
         </Div>
 
-        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col justify-between" animateOnView>
+        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col justify-between blurDiscoDiv" animateOnView>
         <Div className="w-full h-12 flex justify-between">
           <p className="text-white text-4xl tracking-tighter">Strategy</p>
         </Div>
@@ -505,7 +513,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
 
         </Div>
 
-        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col justify-between" animateOnView>
+        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col justify-between blurDiscoDiv" animateOnView>
         <Div className="w-full h-12 flex justify-between">
           <p className="text-white text-4xl tracking-tighter">Launch</p>
         </Div>
@@ -514,18 +522,30 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
         </Div>
         </Div>
 
-        <Div className="w-full h-72 bg-white rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col space-y-7" animateOnView>
-        <Div className="w-full h-12 flex justify-between">
-          <p className="text-white text-4xl tracking-tighter">Discovery</p>
+        <Div className="w-full h-80 bg-white rounded-3xl mt-20 backdrop-blur-sm py-7 px-5 flex flex-col gap-3 hover:bg-white/80" animateOnView>
+        <Div className="w-full h-12 flex">
+          <p className="text-gray-700 text-base tracking-tight">Book your free audit call today</p>
         </Div>
-        <Div className="w-full h-14">
-          <p className="text-gray-400">Understanding your goals, audience, and vision to set a clear direction before design begins.</p>
+        <Div className="w-80 h-28">
+          <p className="text-black text-5xl tracking-tight font-medium">Grab the Opportunity</p>
+        </Div>
+        <Div className="w-full h-14 mt-10 flex relative">
+          <Div className="w-1/2 h-full">
+          <p className="font-medium">Get Started today</p>
+          <p className="text-gray-700">FullStack Development</p>
+          </Div>
+          <p className="text-gray-700 absolute right-0 bottom-0 text-base">( Get in touch )</p>
         </Div>
         </Div>
+        </Div>
+      </Div>
 
+                 <Testimonials />
 
-        </Div>
-              </Div>
+                 <Questions />
+
+                 <Footer />
+
     </Div>
     </>
 

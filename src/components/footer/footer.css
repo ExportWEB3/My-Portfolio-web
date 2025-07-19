@@ -1,0 +1,71 @@
+.padding01{
+  padding-top: 100px;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .mainFooterRes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .È×þÖR†{
+        font-size: 40px;
+    }
+    .smallFooterTxt{
+        font-size: 40px;
+    }
+    .smallFooterTxtDiv{
+        width: 100%;
+        margin-top: 80px;
+    }
+    .hoverChangeDiv{
+        height: 150px;
+        top: -32px;
+    }
+    .animate-pulseX{
+        width: 10px;
+        height: 10px;
+    }
+    .almLastDiv{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .almLastDiv1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .almLastDiv2{
+        width: 100%;
+        height: 300px;
+        margin-top: 50px;
+    }
+    .almLastDiv2Top{
+        top: 40px;
+        text-align: center;
+    }
+    .almLastDiv3{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        height: 300px;
+    }
+    .lastFooterDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hoverChangeDivTxt{
+        font-size: 20px;
+        bottom: 25px;
+    }
+    .foothide{
+        display: none;
+    }
+}

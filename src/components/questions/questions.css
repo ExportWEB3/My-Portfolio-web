@@ -1,0 +1,25 @@
+.paddingQ{
+    padding-top: 200px;
+}
+.padding01{
+  padding-top: 100px;
+}
+/* WebKit (Chrome, Safari, Edge) */
+.scrollbar-thumb-only::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thumb-only::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thumb-only::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2); /* or any color you want */
+  border-radius: 3px;
+}
+
+/* Firefox */
+.scrollbar-thumb-only {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}

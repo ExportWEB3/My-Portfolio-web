@@ -1,24 +1,15 @@
-.plus-background {
-  background-color: #0d0d0d; /* or transparent if you want cards to show background */
-  z-index: 0;
-  overflow: hidden;
-}
 
-.plus-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
-  gap: 20px;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  opacity: 0.08;
-}
 
-.plus {
-  color: #ffffff;
-  font-size: 16px;
-  text-align: center;
-  user-select: none;
-  opacity: 0.4;
-    text-shadow: 0 0 4px #fff;
-}
+@media screen and (max-width: 768px) {
+  .plus-grid {
+    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+  }
+
+  .plusDiv {
+    height: 1600px !important;
+    overflow: hidden;
+  }
+
+
+  }
+

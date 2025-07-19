@@ -53,3 +53,204 @@ transition: ease 0.5s;
     clip-path: inset(0 100% 100% 0);
   }
 }
+
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+
+  .responsive-main {
+    padding: 0 16px;
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+
+
+  .containerRes {
+    max-width: 100%;
+    padding: 0 6px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+    .containerCustom{
+    max-width: 100%;
+    padding: 0px 6px;
+    height: auto;
+  }
+  .containerResX{
+    max-width: 100%;
+    padding: 0 6px;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .cardRes {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+  }
+
+  .moveRes {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .moveResTxt{
+    font-size: 40px;
+  }
+
+  .iconsTxtRes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iconTxtIconRes{
+    margin-top: 35px;
+    width: 100%;
+  }
+
+  .portRes{
+    margin-left: 0px;
+    width: 100%;
+    height: 100px;
+    margin-top: -50px;
+  }
+  .portResTxt{
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: left;
+  }
+  .res001{
+    width: 100%;
+    position: relative;
+  }
+  .resHomeEx{
+    background-color: black;
+    width: 50%;
+    position: absolute;
+    right: 0px;
+  }
+  .aboutRes{
+    margin-top: 100px;
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+  }
+  .aboutResTxt{
+    font-size: 35px;
+  }
+  .aboutResTxtDiv{
+    width: 92%;
+  }
+  .availaRes{
+    display: flex;
+    flex-direction: column !important;
+    align-items: normal;
+  }
+  .descDiv{
+    width: 100%;
+  }
+  .logoDiv{
+    width: 100%;
+    height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(3, auto); 
+  place-items: left;
+  padding-right: 15px !important;
+  }
+  .logoDivImg{
+  background-color: #3b372c;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: 200px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+  }
+  .logoDivImg1{
+    margin-left: 30px;
+  }
+  .logoDivImg3, .logoDivImg4{
+    margin-top: -130px;
+    margin-right: 10px !important;
+  }
+  .logoDivImg5, .logoDivImg6{
+    margin-top: -130px;
+    margin-right: 10px !important;
+  }
+  .logoDivImg2, .logoDivImg4, .logoDivImg6{
+    margin-left: -2px !important;
+  }
+  .servDiv{
+    width: 100%;
+  }
+  .driveDiv{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .driveDivTxt{
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+  }
+  .driveDivBtnDiv{
+    left: 7px;
+    display: flex;
+    justify-content: left;
+  }
+  .discoDiv{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .blurDiscoDiv{
+    height: 300px !important;
+  }
+  .getDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .getDivTxt{
+    margin-left: 0px;
+    font-size: 45px;
+    margin-top: 10px;
+  }
+  .getDivTxtHide{
+    display: none;
+  }
+  .digiDiv{
+    flex-direction: column;
+    padding-top: 10px !important;
+  }
+  .digiDivMain{
+    background-color: white;
+    margin-left: -20px !important;
+    margin-top: 30px;
+  }
+  .digiDivMainTxt{
+    font-size: 30px;
+  }
+  .digiDivMainBtn{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px ;
+    width: 50px;
+    height: 50px;
+  }
+  .digiDivMainBtnDiv{
+    background-color: wheat;
+    height: 300px;
+    width: 100%;
+  }
+}
+  

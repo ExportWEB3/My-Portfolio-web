@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,6 +18,12 @@
   max-width: 2000px;
   padding: 0px 100px;
 }
+
+  .containerCustom{
+    max-width: 100%;
+    padding: 0px 6px;
+    height: auto;
+  }
 
 /* ends */
 
