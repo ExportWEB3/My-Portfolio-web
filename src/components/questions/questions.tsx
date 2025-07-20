@@ -30,7 +30,7 @@ export function Questions() {
                     </Div>
                   }
                 >
-                  <div className="text-white questionsAnsDivInnerContent">
+                  <div className="text-white questionsAnsDivInnerContent questionsAnsDivInnerContentXr questionsAnsDivInnerContentX">
                     <p className="questionsAnsDivInnerContentTxt">
                       Everything I build is fully customizable. Whether you need a unique design, custom API
                       integration, or tailored backend logic, I’ll structure it to match your exact business goals.
@@ -106,7 +106,7 @@ export function Questions() {
                     </Div>
                   }
                 >
-                  <div className="text-white questionsAnsDivInnerContent">
+                  <div className="text-white questionsAnsDivInnerContent questionsAnsDivInnerContentX">
                     <p className="questionsAnsDivInnerContentTxt">
                       Absolutely. I can implement multi-language support using best practices, ensuring your content is
                       accessible to a global audience.
@@ -132,7 +132,7 @@ export function Questions() {
                     </Div>
                   }
                 >
-                  <div className="text-white questionsAnsDivInnerContent">
+                  <div className="text-white questionsAnsDivInnerContent questionsAnsDivInnerContentX">
                     <p className="questionsAnsDivInnerContentTxt">
                       Definitely. I can integrate your system with any third-party service, internal backend, or custom
                       API — whether it's REST, GraphQL, or something more specialized.
@@ -158,7 +158,7 @@ export function Questions() {
                     </Div>
                   }
                 >
-                  <div className="text-white questionsAnsDivInnerContent">
+                  <div className="text-white questionsAnsDivInnerContent questionsAnsDivInnerContentX">
                     <p className="questionsAnsDivInnerContentTxt">
                       Absolutely. I follow industry best practices to secure your application — from input validation
                       and HTTPS enforcement to auth layers like JWT or OAuth.

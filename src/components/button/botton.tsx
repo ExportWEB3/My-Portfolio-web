@@ -62,7 +62,7 @@ export function Button(props: CustomButtonAttributes) {
         <Link to={link}>
           <button
             type={type}
-            className={`${className} w-60 h-16 text-white text-xl font-semibold rounded-md bg-blue-800 `}
+            className={`${className} w-60 h-16 text-white text-xl font-semibold rounded-md bg-blue-800 mainbtnResComp`}
             onClick={handleOnClick}
           >
             {btnText}
@@ -73,7 +73,7 @@ export function Button(props: CustomButtonAttributes) {
           onMouseEnter={() => handlHoverEffect({ eventType: "mouse_enter" })}
           onMouseLeave={() => handlHoverEffect({ eventType: "mouse_leave" })}
           type={type}
-          className={` text-xl font-semibold rounded-md
+          className={` text-xl font-semibold rounded-md mainbtnResComp
             ${
               isHoverEffect && btnComponentState?.isHover && "bg-black"
             } ${className}`}

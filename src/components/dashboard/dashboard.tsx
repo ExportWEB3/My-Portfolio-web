@@ -12,6 +12,7 @@ import { PlusGridBackground } from "../gridBackground/gridBackground";
 import { Testimonials } from "../testimonials/testimonials";
 import { Questions } from "../questions/questions";
 import { Footer } from "../footer/footer";
+import { Services } from "../services/services";
 
 
 
@@ -40,7 +41,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
         <Div className=" bg-black h-screen w-full responsive-main" >
       <Div className="w-full Container containerRes heightF flex items-center" >
         <Div className="w-w100 h-h270 bg-white cardRes rounded-xl p-0.5" animateOnView>
-          <Div className="w-full bg-black rounded-xl px-5 py-2">
+          <Div className="w-full bg-black rounded-xl px-5 py-2 ">
           <Div className="w-full h-10 flex items-center justify-between ">
             <Div className="flex space-x-2"> 
             <Icon
@@ -64,17 +65,17 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </p>            </Div>
           </Div>
 
-          <Div className="w-full h-16 mt-5 flex gap-3 items-center p-2">
+          <Div className="w-full h-16 mt-5 flex gap-3 items-center p-2 fontBtnDivXoh">
             <Button
             type="button"
             btnText="Get In Touch"
-            className="h-10 w-40 fontBtn bg-slate-50 text-black"
+            className="h-10 w-40 fontBtnDivXohBtn bg-slate-50 text-black"
              />
 
             <Button
             type="button"
             btnText="About Me"
-            className="h-10 w-40 fontBtn  btnGrad text-white "
+            className="h-10 w-40 fontBtnDivXohBtn  btnGrad text-white "
              />
           </Div>
           </Div>
@@ -116,24 +117,47 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
         <Div className="w-full h-2/5 flex items-center mt-10 containerResX" animateOnView>
         <Div className="w-52 h-12 flex space-x-8 iconTxtIconRes">
           {/* Social Icons */}
-          <Div className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-lg bg-black/60 border border-white/10 group hover:bg-white transition-all ease-in-out duration-200">
-            {/* LinkedIn SVG */}
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white group-hover:text-black transition-colors ease-in-out duration-200" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.845-1.563 3.043 0 3.604 2.004 3.604 4.609v5.587z"/>
-            </svg>
-          </Div>
-          <Div className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-lg bg-black/60 border border-white/10 group hover:bg-white transition-all ease-in-out duration-200">
-            {/* YouTube SVG */}
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white group-hover:text-black transition-colors ease-in-out duration-200" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M23.498 6.186a2.994 2.994 0 0 0-2.112-2.112c-1.867-.502-9.386-.502-9.386-.502s-7.519 0-9.386.502a2.994 2.994 0 0 0-2.112 2.112c-.502 1.867-.502 5.773-.502 5.773s0 3.906.502 5.773a2.994 2.994 0 0 0 2.112 2.112c1.867.502 9.386.502 9.386.502s7.519 0 9.386-.502a2.994 2.994 0 0 0 2.112-2.112c.502-1.867.502-5.773.502-5.773s0-3.906-.502-5.773zm-13.498 9.314v-7l6 3.5-6 3.5z"/>
-            </svg>
-          </Div>
-          <Div className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-lg bg-black/60 border border-white/10 group hover:bg-white transition-all ease-in-out duration-200">
-            {/* Facebook SVG */}
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white group-hover:text-black transition-colors ease-in-out duration-200" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.326v21.348c0 .733.592 1.326 1.325 1.326h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.312h3.587l-.467 3.622h-3.12v9.294h6.116c.733 0 1.325-.593 1.325-1.326v-21.349c0-.733-.592-1.325-1.325-1.325z"/>
-            </svg>
-          </Div>
+<a
+  href="https://linkedin.com/in/your-profile"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Div className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-lg bg-black/60 border border-white/10 group hover:bg-white transition-all ease-in-out duration-200">
+    {/* LinkedIn SVG */}
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white group-hover:text-black transition-colors ease-in-out duration-200" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.845-1.563 3.043 0 3.604 2.004 3.604 4.609v5.587z"/>
+    </svg>
+  </Div>
+</a>
+
+<a
+  href="https://x.com/exportD_ev"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Div className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-lg bg-black/60 border border-white/10 group hover:bg-white transition-all ease-in-out duration-200">
+    {/* X (Twitter) SVG */}
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" className="w-5 h-5 text-white group-hover:text-black transition-colors ease-in-out duration-200" fill="currentColor">
+      <path d="M715.6 567.6 1176.3 0H1070L670.3 487.4 351.5 0H0l489.1 727.4L23.7 1227h134.3l430.5-525.3 339.1 525.3H1200L715.6 567.6zm-147.3 179.6-49.8-76.4L174.2 91.3h126.5l328.5 504.1 49.8 76.4L1025 1135.7H898.5L568.3 747.2z"/>
+    </svg>
+  </Div>
+</a>
+
+
+<a
+  href="https://github.com/ExportWEB3"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Div className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-lg bg-black/60 border border-white/10 group hover:bg-white transition-all ease-in-out duration-200">
+    {/* GitHub SVG */}
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white group-hover:text-black transition-colors ease-in-out duration-200" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.173c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.087-.744.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.418-1.305.762-1.605-2.665-.304-5.466-1.332-5.466-5.93 0-1.31.47-2.381 1.236-3.221-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 013.003-.404c1.018.005 2.043.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.241 2.873.118 3.176.77.84 1.234 1.911 1.234 3.221 0 4.61-2.803 5.624-5.475 5.921.43.371.823 1.102.823 2.222v3.293c0 .319.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+    </svg>
+  </Div>
+</a>
+
+
         </Div>
         <Div className="w-w38 ml-80 portRes h-full flex items-center">
           <p className="text-gray-400 portResTxt">
@@ -238,182 +262,11 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </Div>
         </Div>
 
-        <Div className="w-full h-72 bg-black Container containerCustom">
-          <Div className="w-full h-full padding01 flex space-x-28  digiDiv" animateOnView>
-            <p className="text-white text-4xl">01</p>
-            <Div className="flex-1 h-full relative overflow-hidden digiDivMain">
-              <Div
-                className=" top-0 left-0 w-full h-full flex bg-black hover:text-white"
-                style={{ zIndex: 2 }}
-              >
-<ToggleBox
-  title={
-    <Div className="w-full h-full ">
-      <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">Digital Web Development</h3>
-      <Div className="flex ">
-        <Div className="space-x-4">
-          <button className="px-6 digiDivMainBtn py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Portfolio Websites
-        </button>
-        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Agency Websites
-        </button>
-        </Div>
+        <Services />
 
+        
 
-        <Div className="space-x-4">
-          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80   border border-white/20 hover:bg-black/60 transition-all duration-200">
-          SaaS Websites
-        </button>
-        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80   border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Personal Branding Sites
-        </button>
-        </Div>
-      </Div>
-    </Div>
-  }
->
-  <div className="expandToggleBox">
-    <p>I create polished digital experiences that align with your brand and engage your audience—across websites, apps, and marketing visuals.</p>
-  </div>
-</ToggleBox>
-            
-      </Div>
-            </Div>
-          </Div>
-        </Div>
-
-                <Div className="w-full h-72 -mt-20 bg-black Container containerCustom">
-          <Div className="w-full h-full padding01 flex space-x-28 digiDiv2" animateOnView>
-            <p className="text-white text-4xl">02</p>
-            <Div className="flex-1 h-full relative overflow-hidden digiDivMain">
-              <Div
-                className=" top-0 left-0 w-full h-full flex bg-black"
-                style={{ zIndex: 2 }}
-              >
-<ToggleBox
-  title={
-    <Div className="w-full h-full ">
-      <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">UI Kits & Design Systems</h3>
-      <div className="flex ">
-        <Div className="space-x-4">
-          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Framer/Figma UI Kits
-        </button>
-        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Design System for Agencies
-        </button>
-        </Div>
-        <Div className="space-x-4">
-          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Component Libraries
-        </button>
-        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Custom UI Kits
-        </button>
-        </Div>
-
-      </div>
-    </Div>
-  }
->
-  <div className="expandToggleBox">
-    <p>Custom-built systems that make your design process faster, more consistent, and easier to scale with your product.</p>
-  </div>
-</ToggleBox>
-            
-      </Div>
-            </Div>
-          </Div>
-        </Div>
-
-                <Div className="w-full h-72 -mt-20 bg-black Container containerCustom">
-          <Div className="w-full h-full padding01 flex space-x-28 digiDiv2" animateOnView>
-            <p className="text-white text-4xl">03</p>
-            <Div className="flex-1 h-full relative overflow-hidden digiDivMain">
-              <Div
-                className=" top-0 left-0 w-full h-full flex bg-black"
-                style={{ zIndex: 2 }}
-              >
-<ToggleBox
-  title={
-    <Div className="w-full h-full ">
-      <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">Landing Page Development</h3>
-      <div className="flex ">
-        <Div className="space-x-4">
-                  <button className="px-6 digiDivMainBtn py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Lead Generation Pages
-        </button>
-        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Sales Pages
-        </button>
-        </Div>
-        <Div className="space-x-4">
-        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
-         Product Launch Pages
-        </button>
-        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80   border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Market Campaign Pages
-        </button>
-        </Div>
-      </div>
-    </Div>
-  }
->
-  <div className="text-white expandToggleBox">
-    <p>Strategic, conversion-focused landing pages designed to capture attention and turn visitors into customers.</p>
-  </div>
-</ToggleBox>
-            
-      </Div>
-            </Div>
-          </Div>
-        </Div>
-
-                <Div className="w-full h-72 -mt-20 bg-black Container containerCustom ">
-          <Div className="w-full h-full padding01 flex space-x-28 digiDiv2" animateOnView>
-            <p className="text-white text-4xl">04</p>
-            <Div className="flex-1 h-full relative overflow-hidden digiDivMain">
-              <Div
-                className=" top-0 left-0 w-full h-full flex bg-black"
-                style={{ zIndex: 2 }}
-              >
-<ToggleBox
-  title={
-    <Div className="w-full h-full ">
-      <h3 className="text-3xl font-medium mb-6 -mt-3 digiDivMainTxt">Design Templates</h3>
-      <div className="flex ">
-        <Div className="space-x-4">
-          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Portfolio Templates
-        </button>
-        <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
-          Agency Templates
-        </button>
-        </Div>
-        <Div className="space-x-4">
-          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
-            Saas Templates
-          </button>
-          <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
-            Board Templates
-          </button>
-        </Div>
-      </div>
-    </Div>
-  }
->
-  <div className="text-white expandToggleBox">
-    <p>Fully responsive and easily customizable Framer templates, crafted to help you launch quickly without sacrificing design quality.</p>
-  </div>
-</ToggleBox>
-            
-      </Div>
-            </Div>
-          </Div>
-        </Div>
-
-        <Div className="w-full h-h1100 bg-black padding Container containerCustomX">
+        <Div className="w-full h-h1100 bg-black padding Container containerCustomX containerRog">
           <Div className="w-full h-28 mt-10 flex relative items-end recentDiv" animateOnView>
             <h1 className="text-8xl font-medium tracking-tighter text-gray-400 recentDivTxt">Recent <a className="text-white">Works.</a></h1>
             <p className="text-gray-400 absolute right-0">(  Projects )</p>
@@ -433,18 +286,18 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
               <p className="text-gray-300 font-medium">May 15,2025</p>
               <p className="absolute right-0 text-gray-300 font-medium">Tildette Project</p>
             </Div>
-            <h2 className="text-white text-4xl tracking-tight mt-10">Evolve</h2>
+            <h2 className="text-white text-4xl tracking-tight mt-10">Landing Page</h2>
             <Div className="w-full h-20 flex items-center gap-5">
-            <button className="px-6 py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+            <button className="px-6 py-2 rounded-full HoverBtnP bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
           Typescript
         </button>
-            <button className="px-6 py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+            <button className="px-6 py-2 rounded-full HoverBtnP bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
           Tailwind / Css
         </button>
-                <button className="px-6 hiddenHoverBtnP py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+                <button className="px-6 hiddenHoverBtnP HoverBtnP py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
           Animate.Css
         </button>
-                <button className="px-6 py-2 hiddenHoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+                <button className="px-6 py-2 hiddenHoverBtnP HoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
           Landing Page
         </button>
             </Div>
@@ -458,18 +311,18 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
                 <p className="text-gray-300 font-medium">May 15,2025</p>
                 <p className="absolute right-0 text-gray-300 font-medium">Tildette Project</p>
               </Div>
-              <h2 className="text-white text-4xl tracking-tight mt-10">Evolve</h2>
+              <h2 className="text-white text-4xl tracking-tight mt-10">Login and Sign-Up Auth </h2>
               <Div className="w-full h-20 flex items-center gap-5">
-                <button className="px-6 py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+                <button className="px-6 py-2 HoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
                   Backend In.
                 </button>
-                <button className="px-6 py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+                <button className="px-6 py-2 HoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
                   Notification
                 </button>
-                <button className="px-6 py-2 hiddenHoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+                <button className="px-6 py-2 HoverBtnP hiddenHoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
                   OTP integration
                 </button>
-                <button className="px-6 py-2 hiddenHoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
+                <button className="px-6 py-2 HoverBtnP hiddenHoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
                   Register/Login Page
                 </button>
               </Div>
@@ -478,7 +331,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </Div>
         </Div>
 
-<Div className="w-full h-72 bg-black Container flex items-center containerCustomX ">
+<Div className="w-full h-72 bg-black Container flex items-center containerCustomX containerRog">
   <Div className="w-full h-14 group seeAllPDiv" animateOnView>
     <p className="text-3xl font-medium seeAllPDivTxt tracking-tighter text-gray-400 group-hover:text-white transition-colors duration-200">
       See all Projects
@@ -487,7 +340,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
   </Div>
 </Div>
 
-      <Div className="w-full h-40 bg-black Container flex items-end relative containerCustom">
+      <Div className="w-full h-40 bg-black Container flex items-end relative containerCustom containerRog">
         <Div className="w-full h-32 flex items-end getDiv" animateOnView>
           <p className="text-gray-400">( Get Started )</p>
           <h1 className="text-8xl text-white font-medium tracking-tighter ml-80 getDivTxt">Process

@@ -83,6 +83,18 @@ transition: ease 0.5s;
     padding: 0px 6px;
     height: auto;
   }
+  .fontBtn{
+    margin-top: 20px;
+  }
+  .fontBtnDivXoh{
+    margin-left: 10px;
+  }
+  .fontBtnDivXohBtn{
+    margin-top: 40px;
+    font-size: 13px;
+    margin-top: 10px;
+    width: 140px;
+  }
   .containerResX{
     max-width: 100%;
     padding: 0 6px;
@@ -103,7 +115,7 @@ transition: ease 0.5s;
   }
 
   .moveResTxt{
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .iconsTxtRes{
@@ -113,7 +125,7 @@ transition: ease 0.5s;
   }
 
   .iconTxtIconRes{
-    margin-top: 35px;
+    margin-top: 55px;
     width: 100%;
   }
 
@@ -202,7 +214,7 @@ transition: ease 0.5s;
     flex-direction: column;
   }
   .driveDivTxt{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 40px;
     text-align: left;
   }
@@ -272,6 +284,10 @@ transition: ease 0.5s;
   .expandToggleBox{
     margin-top: -25px;
   }
+  .expandToggleBox p{
+    font-size: 14px;
+    margin-left: 10px;
+  }
   .recentDiv{
     margin-top: 50px;
   }
@@ -295,22 +311,51 @@ transition: ease 0.5s;
   .hiddenHoverBtnP{
     display: none;
   }
+  .datehidden{
+    display: none;
+  }
   .seeAllPDiv{
     margin-top: 350px;
   }
   .seeAllPDivTxt{
     font-size: 25px;
   }
+    .testiDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+  
+  }
+  .testiDiv h1{
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  .testiHoldDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .testiHoldDivTop{
+    flex-direction: row;
+    width: 100%;
+    padding: 5px;
+  }
+  .testiHoldDivDown{
+    width: 100%;
+    margin-left: 1px !important;
+  }
 }
   
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px)  {
 
 
       .containerCustom{
   max-width: 2000px;
   padding: 0px 100px;
+
   }
   .servDiv{
     margin-top: 90px !important;
@@ -322,4 +367,140 @@ transition: ease 0.5s;
     padding-top: 120px !important;
   }
   
+}
+
+@media screen and (min-width: 769px) and (max-width: 898px) {
+    .containerRog{
+      max-width: 2000px;
+  padding: 50px;
+  margin-top: 0px;
+  }
+    .HoverBtnP{
+    font-size: 11px;
+  }
+  .moveRes{
+    height: 250px;
+    margin-left: clamp(20px, 4vw, 40px);
+  }
+    .moveResTxt{
+  font-size: clamp(24px, 4vw, 40px);
+  }
+
+  .portRes{
+    margin-left: clamp(80px, 4vw, 120px);
+    width: 400px;
+    height: fit-content;
+  }
+  .driveDiv{
+    display: flex;
+    align-items: end;
+  }
+  .driveDivTxt{
+    font-size: clamp(15px, 4vw, 30px);
+    line-height: 30px;
+  }
+  .digiDivMainBtnX{
+    font-size: 11px;
+  }
+  .expandToggleBox{
+    margin-top: -20px;
+  }
+  .expandToggleBox p{
+    font-size: 13px;
+  }
+  .recentDivTxt{
+    font-size: clamp(24px, 8vw, 30px);
+  }
+  .projectDivHover{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  .projectDivHover1{
+    width: 100%;
+  }
+  .projectDivHover2{
+    width: 100%;
+    margin-top: 30px;
+    z-index: 100;
+  }
+   .getDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .getDivTxt{
+    margin-left: 0px;
+    font-size: 45px;
+    margin-top: 10px;
+  }
+    .testiDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+  
+  }
+  .testiDiv h1{
+    font-size: 40px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 899px) and (max-width: 1253px) {
+  .containerRog{
+      max-width: 2000px;
+      padding: 30px;
+  }
+  .HoverBtnP{
+    font-size: 11px;
+  }
+  .moveResTxt{
+  font-size: clamp(24px, 4vw, 45px);
+  }
+  .cardRes{
+    width: 80%;
+  }
+    .driveDiv{
+    display: flex;
+    align-items: end;
+  }
+  .driveDivTxt{
+    font-size: clamp(20px, 4vw, 40px);
+    line-height: 30px;
+  }
+    .projectDivHover{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    overflow-y: auto;
+  }
+  .projectDivHover1{
+    width: 100%;
+  }
+  .projectDivHover2{
+    width: 100%;
+    margin-top: 30px;
+    z-index: 100;
+  }
+   .getDivTxt{
+    margin-left: 250px;
+    font-size: 70px;
+    margin-top: 10px;
+  }
+  .testiDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+  
+  }
+  .testiDiv h1{
+    font-size: 40px;
+    margin-left: 30px;
+  }
 }

@@ -1,79 +1,32 @@
-import { platformData } from "./utilities/typedeclaration";
-
-  export const countryOptions = [
+export const testimonials = [
   {
-    label: "Nigeria",
-    value: "nigeria",
-    imageUrl: "/images/nigeriaFlag.png",
+    id: 1,
+    name: "Michael Kurt ",
+    role: "CEO, Luxe Interiors",
+    image: "https://plus.unsplash.com/premium_photo-1661440102417-fe9ea01d0518?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFuJTIwY29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D",
+    quote: "The website is stunning — better than we imagined!",
+    description:
+      "Working with you was the best decision we made for our brand. The site you built not only looks premium, it runs flawlessly. Clients have praised how easy it is to use. You paid attention to every detail, and we truly love the final result.",
+    rating: 5,
   },
   {
-    label: "USA",
-    value: "usa",
-    imageUrl: "/images/americaFlag.png",
+    id: 2,
+    name: "Sarah Johnson",
+    role: "Founder, FinSecure",
+    image: "https://plus.unsplash.com/premium_photo-1661687347038-12b853e464bf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2lybCUyMGNvbXB1dGVyfGVufDB8fDB8fHww",
+    quote: "Impressed by the security and speed of the site.",
+    description:
+      "As a fintech startup, security was our biggest concern — and you delivered beyond expectations. The backend is rock solid, and load times are lightning fast. You took time to understand our goals and nailed every requirement.",
+    rating: 5,
   },
   {
-    label: "UK",
-    value: "uk",
-    imageUrl: "/images/ukFlag.png",
-  },
-  {
-    label: "Kenya",
-    value: "kenya",
-    imageUrl: "/images/kenyaFlag.png",
-  },
+    id: 3,
+    name: "Lilian Oslen",
+    role: "Creative Director, Bloom Agency",
+    image: "https://images.unsplash.com/photo-1601933552406-c6ea0739a098?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fG1hbiUyMGNvbXB1dGVyfGVufDB8fDB8fHww",
+    quote: "Top-tier quality and such a smooth experience!",
+    description:
+      "From the UI design to mobile responsiveness, everything was executed beautifully. You brought my vision to life with precision and style. The animations are clean, the layout is intuitive, and the site feels super professional.",
+    rating: 5,
+  }
 ];
-
-export const filterOptions = [
-  { label: "Filter", value: "filter" },
-  { label: "By Price", value: "price" },
-  { label: "By Category", value: "category" },
-  { label: "By Rating", value: "rating" },
-];
-
-export const sortOptions = [
-  { label: "Sort", value: "sort" },
-  { label: "Newest First", value: "newest" },
-  { label: "Oldest First", value: "oldest" },
-  { label: "Lowest Price", value: "lowest" },
-  { label: "Highest Price", value: "highest" },
-];
-
-export const platformDatax: platformData[] = [
-  { id: "twitter", label: "X/Twitter", img: "/images/xLogo.webp" },
-  { id: "facebook", label: "Facebook", img: "/images/facebook.png" },
-  { id: "instagram", label: "Instagram", img: "/images/instagram.png" },
-  { id: "tiktok", label: "Tiktok", img: "/images/tiktok.jpg" },
-];
-
-export const timePeriods: ("today" | "yesterday" | "pastWeek")[] = [
-  "today", "yesterday", "pastWeek"
-];
-
-export const twitterTrends = {
-  today: ["#MondayMotivation", "#TypeScript", "#TailwindCSS", "#MondayMotivation", "#MarketingTips"],
-  yesterday: ["#OpenAI", "#ChatGPT", "#AITrends", "#AITrends", "#AITrends"],
-  pastWeek: ["#Solana", "#Web3", "#Crypto", "#Crypto", "#Crypto"],
-};
-
-export const facebookTrends = {
-  today: ["Football Transfer News", "Naija Gossip", "Funny Memes"],
-  yesterday: ["Elections 2025", "Music Throwback", "Viral Skits"],
-  pastWeek: ["BBNaija", "Trending Politics", "Sunday Sermons"],
-};
-
-export const instagramTrends = {
-  today: ["#OOTD", "#ViralReels", "#FoodieVibes"],
-  yesterday: ["#FitnessGoals", "#ThrowbackThursday", "#MakeupTutorial"],
-  pastWeek: ["#TravelDiaries", "#InstaFashion", "#MotivationMonday"],
-};
-
-
-export const tiktokTrends = {
-  today: ["#DanceChallenge", "#FunnySkits", "#TikTokMadeMeBuyIt"],
-  yesterday: ["#LipSync", "#ViralChallenge", "#FYP"],
-  pastWeek: ["#GlowUp", "#StoryTime", "#DuetThis"],
-};
-
-export const trendOptions: ("hashtags" | "topics" | "videos" | "locations")[] = [
-  "hashtags", "topics", "videos", "locations"
-]

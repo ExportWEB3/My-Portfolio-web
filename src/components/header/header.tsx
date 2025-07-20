@@ -18,20 +18,20 @@ export function HeaderComponent () {
   }, [menuOpen]);
 
   return (
-    <Div className="w-full bg-black px-6 md:px-24 py-4 flex items-center relative z-50">
+    <Div className="w-full bg-black px-6 md:px-24 py-4 flex items-center relative z-50 overflow-hidden">
       <h1 className="export text-white font-extrabold exportRes text-2xl md:text-3xl" style={{ transform: "scaleY(0.7)" }}>
         È×þÖR†
       </h1>
 
       {/* Desktop Navigation */}
-      <Div className="hidden md:flex ml-20 w-48 h-10 items-center justify-between">
+      <Div className="hidden md:flex ml-20 w-48 h-10 items-center justify-between midTopHead">
         <p className="text-gray-300 hover:text-gray-500 cursor-pointer">Home</p>
         <p className="text-gray-300 hover:text-gray-500 cursor-pointer">Projects</p>
         <p className="text-gray-300 hover:text-gray-500 cursor-pointer">About</p>
       </Div>
 
       {/* Desktop Buttons */}
-      <Div className="hidden md:flex items-center gap-x-4 ml-auto">
+      <Div className="hidden md:flex items-center gap-x-4 ml-auto resHoverAction">
         <Div
           className={`flex items-center justify-center rounded-lg transition-all duration-300 cursor-pointer bg-black/60 border border-white/10 overflow-hidden ${
             hovered ? "w-32 px-2" : "w-12"
@@ -57,7 +57,7 @@ export function HeaderComponent () {
 
       {/* Mobile Menu Toggle */}
       <Div
-        className="ml-auto flex items-center z-[100] cursor-pointer"
+        className="ml-auto flex items-center z-[100] cursor-pointer md:hidden resDropdown"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         {menuOpen ? (
@@ -88,7 +88,7 @@ export function HeaderComponent () {
     <Button
       type="button"
       btnText="Get Started"
-      className="h-10 px-6 text-base bg-slate-50 text-black"
+      className="h-10 px-6 text-base bg-slate-50 text-black headerResBtn"
     />
   </Div>
 )}

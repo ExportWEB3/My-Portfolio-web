@@ -4,6 +4,12 @@
 .padding01{
   padding-top: 100px;
 }
+.questionsAnsDivInnerContentXr{
+  margin-top: -80px;
+}
+.questionsAnsDivInnerContent{
+  margin-top: -30px;
+}
 /* WebKit (Chrome, Safari, Edge) */
 .scrollbar-thumb-only::-webkit-scrollbar {
   width: 6px;
@@ -61,4 +67,23 @@
     font-size: 15px !important;
     line-height: 20px;
   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1253px) {
+  .questionDivTxt{
+    font-size: clamp(30px, 4vw, 55px);
+  }
+  .questionsAnsDivInnerTxt{
+    font-size: clamp(18px, 4vw, 30px);
+  }
+  .questionsAnsDivInnerContent{
+    margin-top: -25px;
+  }
+  .questionsAnsDivInnerContentTxt{
+    font-size: clamp(10px, 4vw, 13px);
+  }
+  .questionsAnsDivInnerContentX{
+    margin-top: -50px !important;
+  }
+  
 }
