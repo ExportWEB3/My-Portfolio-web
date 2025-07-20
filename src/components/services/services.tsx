@@ -17,8 +17,8 @@ export function Services() {
 <ToggleBox
   title={
     <Div className="w-full h-full ">
-      <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt overflow-x-auto">Digital Web Development</h3>
-      <Div className="flex overflow-x-auto">
+      <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt ">Digital Web Development</h3>
+      <Div className="flex ">
         <Div className="space-x-4">
           <button className="px-6 digiDivMainBtn py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Portfolio Websites
