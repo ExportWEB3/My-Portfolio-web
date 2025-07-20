@@ -256,6 +256,7 @@ transition: ease 0.5s;
   .digiDivMain{
     margin-left: -20px !important;
     margin-top: 10px !important;
+    overflow-x: auto;
   }
   .digiDivMainTxt{
     font-size: 25px;
@@ -271,6 +272,7 @@ transition: ease 0.5s;
   .digiDivMainBtnDiv{
     height: 300px;
     width: 100%;
+    overflow-x: auto;
   }
   .digiDivMainTxt3{
     font-size: 25px;
