@@ -13,6 +13,13 @@ import { Testimonials } from "../testimonials/testimonials";
 import { Questions } from "../questions/questions";
 import { Footer } from "../footer/footer";
 import { Services } from "../services/services";
+import userImg from "../../images/user.webp"
+import ipsum from "../../images/ipsumlog.png"
+import loo from "../../images/loo.avif"
+import framer from "../../images/framer.png"
+import logoo from "../../images/logoo.png"
+import tildetteVid from "../../videos/TildetteProject.webm"
+import signUp from "../../images/signUp.png"
 
 
 
@@ -30,15 +37,27 @@ export function DashboardComponent() {
   const handleRedirect = () => {
 window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
 };
+const handleScrollTo = (id: string) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  } else {
+    console.warn("Element not found:", id);
+  }
+};
 
-// Or for new tab:
-// window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
+  const handleEmail = () => {
+    window.location.href = "mailto:emmanuel00timi@gmail.com?subject=Project Inquiry&body=Hi Emmanuel, I’d like to work with you...";
+  };
 
+  const handleGetStarted = () => {
+    window.open("https://calendly.com/emmanuel00timi/30min", "_blank");
+  };
 
   return (
     <>
-    <HeaderComponent />
-        <Div className=" bg-black h-screen w-full responsive-main" >
+    <HeaderComponent  onNavigate={handleScrollTo} onEmailClick={handleEmail} onGetStarted={handleGetStarted}/>
+        <Div id="home" className=" bg-black h-screen w-full responsive-main" >
       <Div className="w-full Container containerRes heightF flex items-center" >
         <Div className="w-w100 h-h270 bg-white cardRes rounded-xl p-0.5" animateOnView>
           <Div className="w-full bg-black rounded-xl px-5 py-2 ">
@@ -54,7 +73,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           </Div>
 
           <Div className="w-full h-16 mt-5 flex items-center ">
-            <img src="src/images/user.webp" className="w-24" />
+            <img src={userImg} className="w-24" />
             <Div className="flex flex-col w-72 h-full">
               <p className="font-semibold text-xl text-white">Emmanuel O.</p>
           <p className="text-gray-400 flex items-center">
@@ -175,7 +194,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
         </Div>
       </Div>
 
-      <Div className="w-full h-h350 Container bg-black padding space-y-10 containerCustom aboutRes" >
+      <Div id="about" className="w-full h-h350 Container bg-black padding space-y-10 containerCustom aboutRes" >
         <p className="text-gray-400">(About)</p>
         <Div className="w-3/5 h-32 relative flex items-center aboutResTxtDiv" animateOnView>
           <p className="text-6xl aboutResTxt text-gray-400 tracking-tighter relative inline-block">
@@ -200,7 +219,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
       <Div className="w-full h-96 bg-black Container flex items-end containerCustom " >
         <Div className="w-full h-1/2 flex items-center availaRes" animateOnView>
         <Div className="w-1/2 h-1/2 flex items-center">
-        <img src="src/images/user.webp" className="w-24 -ml-5" />
+        <img src={userImg} className="w-24 -ml-5" />
         <Div className="w-40 h-12 flex flex-col">
           <p className="text-white font-medium">Emmanuel O.</p>
           <p className="text-gray-400 flex items-center">
@@ -226,22 +245,22 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
           <Div className="w-full h-full flex items-center justify-center space-x-8 logoDiv" animateOnView>
             {/* Example logos, replace src with your actual logo paths */}
             <Div className="logoDivImg logoDivImg1 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="src/images/ipsum.avif" alt="Logo 1" className="h-16 object-contain" />
+              <img src={ipsum} alt="Logo 1" className="h-16 object-contain" />
             </Div>
             <Div className="logoDivImg logoDivImg2 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="src/images/loo.avif" alt="Logo 2" className="h-16 object-contain" />
+              <img src={loo} alt="Logo 2" className="h-16 object-contain" />
             </Div>
             <Div className="logoDivImg logoDivImg3 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="src/images/framer.png" alt="Logo 3" className="h-10 object-contain" />
+              <img src={framer} alt="Logo 3" className="h-10 object-contain" />
             </Div>
             <Div className="logoDivImg logoDivImg4 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="src/images/logoo.png" alt="Logo 4" className="h-8 object-contain" />
+              <img src={logoo} alt="Logo 4" className="h-8 object-contain" />
             </Div>
             <Div className="logoDivImg logoDivImg5 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="src/images/ipsumlog.png" alt="Logo 5" className="h-12 object-contain" />
+              <img src={ipsum} alt="Logo 5" className="h-12 object-contain" />
             </Div>
             <Div className="logoDivImg logoDivImg6 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="src/images/ipsumlog.png" alt="Logo 6" className="h-12 object-contain" />
+              <img src={ipsum} alt="Logo 6" className="h-12 object-contain" />
             </Div>
           </Div>
         </Div>
@@ -266,7 +285,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
 
         
 
-        <Div className="w-full h-h1100 bg-black padding Container containerCustomX containerRog">
+        <Div id="projects" className="w-full h-h1100 bg-black padding Container containerCustomX containerRog">
           <Div className="w-full h-28 mt-10 flex relative items-end recentDiv" animateOnView>
             <h1 className="text-8xl font-medium tracking-tighter text-gray-400 recentDivTxt">Recent <a className="text-white">Works.</a></h1>
             <p className="text-gray-400 absolute right-0">(  Projects )</p>
@@ -276,7 +295,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
             <Div className="w-1/2 h-full relative group projectDivHover1" onClick={handleRedirect}>
                           <ExploreProjectHover />
             <video
-              src="src/videos/TildetteProject.webm"
+              src={tildetteVid}
               className="w-full h-h70 rounded-xl"
               autoPlay
               loop
@@ -306,7 +325,7 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
             <Div className="w-1/2 h-full relative group projectDivHover2" onClick={handleRedirect}>
                           <ExploreProjectHover />
             <div className="w-full h-h380 mt-16 relative group">
-              <img src="src/images/signUp.png" className="w-full h-h380 mt-16" />
+              <img src={signUp} className="w-full h-h380 mt-16" />
               <Div className="w-full h-12 flex items-center relative mt-16">
                 <p className="text-gray-300 font-medium">May 15,2025</p>
                 <p className="absolute right-0 text-gray-300 font-medium">Tildette Project</p>
@@ -332,12 +351,17 @@ window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
         </Div>
 
 <Div className="w-full h-72 bg-black Container flex items-center containerCustomX containerRog">
-  <Div className="w-full h-14 group seeAllPDiv" animateOnView>
+  <a className="w-full"   target="_blank"
+  rel="noopener noreferrer" href="https://github.com/ExportWEB3"
+>
+    <Div className="w-full h-14 group seeAllPDiv" animateOnView>
     <p className="text-3xl font-medium seeAllPDivTxt tracking-tighter text-gray-400 group-hover:text-white transition-colors duration-200">
       See all Projects
     </p>
     <hr className="border-gray-400 group-hover:border-white transition-colors duration-200 mt-3" />
   </Div>
+</a>
+
 </Div>
 
       <Div className="w-full h-40 bg-black Container flex items-end relative containerCustom containerRog">

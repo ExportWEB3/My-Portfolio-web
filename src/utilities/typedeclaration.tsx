@@ -46,6 +46,13 @@ export interface trendProps {
 
 
 
+export type HeaderComponentProps = {
+  onNavigate: (id: string) => void;
+  onEmailClick: () => void;
+  onGetStarted: () => void;
+};
+
+
 export interface selectAttributes {
   options: {
     label: string;
