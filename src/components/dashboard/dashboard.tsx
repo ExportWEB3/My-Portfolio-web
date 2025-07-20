@@ -294,13 +294,15 @@ const handleScrollTo = (id: string) => {
 
             <Div className="w-1/2 h-full relative group projectDivHover1" onClick={handleRedirect}>
                           <ExploreProjectHover />
-            <video
-              src={tildetteVid}
-              className="w-full h-h70 rounded-xl"
-              autoPlay
-              loop
-              muted
-            ></video>
+<video
+  src={tildetteVid}
+  className="w-full h-h70 rounded-xl"
+  autoPlay
+  loop
+  muted
+  playsInline
+></video>
+
             <Div className="w-full h-12 flex items-center relative">
               <p className="text-gray-300 font-medium">May 15,2025</p>
               <p className="absolute right-0 text-gray-300 font-medium">Tildette Project</p>
