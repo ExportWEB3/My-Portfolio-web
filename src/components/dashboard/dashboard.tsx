@@ -89,6 +89,7 @@ const handleScrollTo = (id: string) => {
             type="button"
             btnText="Get In Touch"
             className="h-10 w-40 fontBtnDivXohBtn bg-slate-50 text-black"
+            onClick={handleEmail}
              />
 
             <Button
@@ -188,7 +189,7 @@ const handleScrollTo = (id: string) => {
         <Div className="w-full h-10 flex items-center res001">
           <p className="text-gray-400">001</p>
           <Div className="exMargin flex-1 h-full flex justify-between resHomeEx">
-            <p className="text-gray-400">Home</p>
+            <p className="text-gray-400" >Home</p>
             <p className=" text-gray-400">Export</p>
           </Div>
         </Div>
@@ -448,7 +449,7 @@ const handleScrollTo = (id: string) => {
 
                  <Questions />
 
-                 <Footer />
+                 <Footer onNavigate={handleScrollTo} onEmailClick={handleEmail} onGetStarted={handleGetStarted} />
 
     </Div>
     </>

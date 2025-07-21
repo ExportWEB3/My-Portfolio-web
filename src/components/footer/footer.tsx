@@ -1,12 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import { Div } from "../divComponent/div";
 import "./footer.css";
+import { HeaderComponentProps } from "../../utilities/typedeclaration";
 
 
-export function Footer () {
+export function Footer ({ onEmailClick, onGetStarted, onNavigate }: HeaderComponentProps) {
       const [expanded, setExpanded] = useState(false);
       const contentRef = useRef<HTMLDivElement>(null);
       const wrapperRef = useRef<HTMLDivElement>(null);
+
+        const handleScrollTo = (id: string) => {
+    onNavigate(id);
+  };
 
 
 
@@ -64,10 +69,10 @@ export function Footer () {
             <Div className="w-full h-52 mt-12 gap-2 flex almLastDiv" animateOnView>
                 <Div className="w-1/3 h-full flex flex-col space-y-5 almLastDiv1">
                 <p className="text-gray-400">( links )</p>
-                <p className="text-white font-medium">Home</p>
-                <p className="text-white font-medium">About</p>
-                <p className="text-white font-medium">Projects</p>
-                <p className="text-white font-medium">Book a call</p>
+                <p className="text-white font-medium" onClick={() => handleScrollTo("home")}>Home</p>
+                <p className="text-white font-medium" onClick={() => handleScrollTo("about")}>About</p>
+                <p className="text-white font-medium" onClick={() => handleScrollTo("projects")}>Projects</p>
+                <p className="text-white font-medium" onClick={onGetStarted}>Book a call</p>
                 </Div>
                 <Div className="w-1/3 h-full flex flex-col items-center relative almLastDiv2">
                 <p className="text-gray-400">( È×þÖR† ) </p>
