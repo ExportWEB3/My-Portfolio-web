@@ -22,7 +22,7 @@ export function Testimonials () {
                 <p className="text-gray-400 absolute right-0 md:hidden lg:hidden sm:hidden datehidden">( 2021-date )</p>
             </Div>
 
-            <Div className="bg-black w-full h-h600 mt-12 space-x-3 flex p-2 testiHoldDiv">
+            <Div className="bg-black w-full h-h600 mt-12 space-x-3 flex p-2 testiHoldDiv" animateOnView >
       {/* Left side list */}
 <div className="w-1/4 h-full flex flex-col overflow-y-auto p-2 gap-3 bg-black testiHoldDivTop">
   {testimonials.map(t => (
