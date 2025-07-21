@@ -29,7 +29,7 @@ export function Footer () {
 
     return (
         <Div className="w-full h-h1100 bg-black padding01">
-            <Div className="w-full h-20 Container containerCustom ">            
+            <Div className="w-full h-20 Container containerCustom" animateOnView>            
                 <Div className="w-full h-20 bg-black flex items-end justify-between mainFooterRes">
                 <p className="text-gray-400 foothide">( footer )</p>
                 <p className="text-6xl font-bold text-white È×þÖR†" style={{ transform: 'scaleY(0.6)' }}>È×þÖR†</p>
@@ -38,8 +38,8 @@ export function Footer () {
             </Div>
 
 
-            <Div className="footBack w-full h-h950 bg-black Container flex flex-col items-center containerCustom">
-                <Div className=" h-h500 mt-10 flex items-center justify-center relative containerCustom smallFooterTxtDiv">
+            <Div className="footBack w-full h-h950 bg-black Container flex flex-col items-center containerCustom" >
+                <Div className=" h-h500 mt-10 flex items-center justify-center relative containerCustom smallFooterTxtDiv"animateOnView>
                     <p className="text-9xl text-center tracking-tight text-gray-400 smallFooterTxt">Every Success Starts with the First <a className="text-white">Step</a>
                                   <span className="ml-2">
             <span className="inline-block w-4 h-4 rounded-full bg-gray-500 animate-pulse animate-pulseX"></span>
@@ -61,7 +61,7 @@ export function Footer () {
                 </Div>
 
 
-            <Div className="w-full h-52 mt-12 gap-2 flex almLastDiv">
+            <Div className="w-full h-52 mt-12 gap-2 flex almLastDiv" animateOnView>
                 <Div className="w-1/3 h-full flex flex-col space-y-5 almLastDiv1">
                 <p className="text-gray-400">( links )</p>
                 <p className="text-white font-medium">Home</p>

@@ -56,7 +56,7 @@ export function Questions() {
                     </Div>
                   }
                 >
-                  <div className="text-white questionsAnsDivInnerContent">
+                  <div className="text-white questionsAnsDivInnerContent questionsAnsDivInnerContentXs">
                     <p className="questionsAnsDivInnerContentTxt">
                       Absolutely. I always build with responsive design in mind, so your site or app will look and
                       function perfectly across mobile, tablet, and desktop.
@@ -80,7 +80,7 @@ export function Questions() {
                     </Div>
                   }
                 >
-                  <div className="text-white questionsAnsDivInnerContent">
+                  <div className="text-white questionsAnsDivInnerContent questionsAnsDivInnerContentXs">
                     <p className="questionsAnsDivInnerContentTxt">
                       Depending on the complexity, I can get a basic MVP live in a few days. For fully customized
                       platforms, I’ll share a clear timeline upfront — and I stick to it.

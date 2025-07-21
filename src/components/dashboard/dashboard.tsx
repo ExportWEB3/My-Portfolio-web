@@ -301,7 +301,10 @@ const handleScrollTo = (id: string) => {
   loop
   muted
   playsInline
-></video>
+  preload="auto"
+  controls={false}
+/>
+
 
             <Div className="w-full h-12 flex items-center relative">
               <p className="text-gray-300 font-medium">May 15,2025</p>
@@ -327,7 +330,7 @@ const handleScrollTo = (id: string) => {
             <Div className="w-1/2 h-full relative group projectDivHover2" onClick={handleRedirect}>
                           <ExploreProjectHover />
             <div className="w-full h-h380 mt-16 relative group">
-              <img src={signUp} className="w-full h-h380 mt-16" />
+              <img src={signUp} className="w-full h-h380 mt-16 projImgRes" />
               <Div className="w-full h-12 flex items-center relative mt-16">
                 <p className="text-gray-300 font-medium">May 15,2025</p>
                 <p className="absolute right-0 text-gray-300 font-medium">Tildette Project</p>

@@ -9,7 +9,12 @@
     height: 1600px !important;
     overflow: hidden;
   }
+}
 
 
+@media screen and (min-width: 769px) and (max-width: 950px) {
+  .plusDiv{
+    height: 1600px;
+    overflow: hidden;
   }
-
+}
