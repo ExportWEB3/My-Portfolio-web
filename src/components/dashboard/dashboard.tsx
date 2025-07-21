@@ -20,6 +20,7 @@ import framer from "../../images/framer.png"
 import logoo from "../../images/logoo.png"
 import tildetteVid from "../../videos/TildetteProject.webm"
 import signUp from "../../images/signUp.png"
+import proj1Img from "../../images/proj1.png"
 
 
 
@@ -243,7 +244,7 @@ const handleScrollTo = (id: string) => {
           <p className="text-gray-400 tracking-tight">
             // Worked with companies like
           </p>
-          <Div className="w-full h-full flex items-center justify-center space-x-8 logoDiv" animateOnView>
+          <Div className="w-full h-full flex items-center justify-center space-x-8 -ml-1 logoDiv  " animateOnView>
             {/* Example logos, replace src with your actual logo paths */}
             <Div className="logoDivImg logoDivImg1 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
               <img src={ipsum} alt="Logo 1" className="h-16 object-contain" />
@@ -295,19 +296,8 @@ const handleScrollTo = (id: string) => {
 
             <Div className="w-1/2 h-full relative group projectDivHover1" onClick={handleRedirect}>
                           <ExploreProjectHover />
-<video
-  src={tildetteVid}
-  className="w-full h-h70 rounded-xl"
-  autoPlay
-  loop
-  muted
-  playsInline
-  preload="auto"
-  controls={false}
-/>
-
-
-            <Div className="w-full h-12 flex items-center relative">
+                          <img src={proj1Img} className="w-full h-h350 mt-16 projImgRes rounded-md" />
+            <Div className="w-full h-12 flex items-center relative mt-16">
               <p className="text-gray-300 font-medium">May 15,2025</p>
               <p className="absolute right-0 text-gray-300 font-medium">Tildette Project</p>
             </Div>
@@ -331,10 +321,10 @@ const handleScrollTo = (id: string) => {
             <Div className="w-1/2 h-full relative group projectDivHover2" onClick={handleRedirect}>
                           <ExploreProjectHover />
             <div className="w-full h-h380 mt-16 relative group">
-              <img src={signUp} className="w-full h-h380 mt-16 projImgRes" />
+              <img src={signUp} className="w-full h-h350 mt-16 projImgRes rounded-md" />
               <Div className="w-full h-12 flex items-center relative mt-16">
                 <p className="text-gray-300 font-medium">May 15,2025</p>
-                <p className="absolute right-0 text-gray-300 font-medium">Tildette Project</p>
+                <p className="absolute right-0 text-gray-300 font-medium">Tildette Project(click start free trial)</p>
               </Div>
               <h2 className="text-white text-4xl tracking-tight mt-10">Login and Sign-Up Auth </h2>
               <Div className="w-full h-20 flex items-center gap-5">

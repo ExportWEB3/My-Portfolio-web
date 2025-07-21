@@ -18,7 +18,7 @@ export function Services() {
   title={
     <Div className="w-full h-full ">
       <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt ">Digital Web Development</h3>
-      <Div className="flex ">
+      <Div className="flex -ml-4">
         <Div className="space-x-4">
           <button className="px-6 digiDivMainBtn py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Portfolio Websites
@@ -63,7 +63,7 @@ export function Services() {
   title={
     <Div className="w-full h-full ">
       <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">UI Kits & Design Systems</h3>
-      <div className="flex ">
+      <div className="flex -ml-4">
         <Div className="space-x-4">
           <button className="px-6 py-2 digiDivMainBtn rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
           Framer/Figma UI Kits
@@ -107,7 +107,7 @@ export function Services() {
   title={
     <Div className="w-full h-full ">
       <h3 className="text-3xl font-medium  mb-6 -mt-3 digiDivMainTxt">Landing Page Development</h3>
-      <div className="flex ">
+      <div className="flex -ml-4">
         <Div className="space-x-4">
                   <button className="px-6 digiDivMainBtn digiDivMainBtnX py-2 rounded-full bg-black/80  border border-white/20 hover:bg-black/60 transition-all duration-200">
           Lead Generation Pages
@@ -150,7 +150,7 @@ export function Services() {
   title={
     <Div className="w-full h-full ">
       <h3 className="text-3xl font-medium mb-6 -mt-3 digiDivMainTxt">Design Templates</h3>
-      <div className="flex ">
+      <div className="flex -ml-4">
         <Div className="space-x-4">
           <button className="px-6 py-2 digiDivMainBtn digiDivMainBtnX rounded-full bg-black/80 border border-white/20 hover:bg-black/60 transition-all duration-200">
           Portfolio Templates
