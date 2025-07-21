@@ -302,7 +302,7 @@ const handleScrollTo = (id: string) => {
                           <ExploreProjectHover />
                           <img src={proj1Img} className="w-full h-h350 mt-16 projImgRes rounded-md" />
             <Div className="w-full h-12 flex items-center relative mt-16">
-              <p className="text-gray-300 font-medium">May 15,2025</p>
+              <p className="text-gray-300 font-medium text-xs">May 15,2025</p>
               <p className="absolute right-0 text-gray-300 font-medium">Tildette Project(click to view project)</p>
             </Div>
             <h2 className="text-white text-4xl tracking-tight mt-10">Landing Page</h2>
@@ -327,7 +327,7 @@ const handleScrollTo = (id: string) => {
             <div className="w-full h-h380 mt-16 relative group">
               <img src={signUp} className="w-full h-h350 mt-16 projImgRes rounded-md" />
               <Div className="w-full h-12 flex items-center relative mt-16">
-                <p className="text-gray-300 font-medium">May 15,2025</p>
+                <p className="text-gray-300 font-medium text-xs">May 15,2025</p>
                 <p className="absolute right-0 text-gray-300 font-medium">Tildette Project(click start free trial)</p>
               </Div>
               <h2 className="text-white text-4xl tracking-tight mt-10">Login and Sign-Up Auth </h2>
