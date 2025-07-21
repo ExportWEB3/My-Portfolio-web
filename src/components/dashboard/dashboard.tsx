@@ -124,9 +124,9 @@ const handleScrollTo = (id: string) => {
                 <span className="text-gray-300">Let's help you</span>
               </h1>
               {/* Fixed green underline */}
-              <span className="block w-32 h-1 mt-2 bg-green-500 rounded absolute left-0 bottom-0"></span>
+              <span className="block w-32 h-1 mt-2 bg-green-500 rounded absolute left-0 bottom-0 bottomResLine"></span>
             </div>
-            <h1 className="text-6xl moveResTxt font-medium font12 text-gray-300 tracking-tighter mt-2">
+            <h1 className="text-6xl moveResTxt moveResTxtX font-medium font12 text-gray-300 tracking-tighter mt-2">
               <a className="text-white">stands out</a>---and sells.
             </h1>
           </div>
