@@ -63,13 +63,6 @@ const handleScrollTo = (id: string) => {
         <Div className="w-w100 h-h270 bg-white cardRes rounded-xl p-0.5" animateOnView>
           <Div className="w-full bg-black rounded-xl px-5 py-2 ">
           <Div className="w-full h-10 flex items-center justify-between ">
-            <Div className="flex space-x-2"> 
-            <Icon
-            icon="ri-map-pin-fill"
-            className="text-gray-300 text-base"
-             />
-            <p className="font-xs font-semibold text-gray-300">Oyo, Nigeria</p>
-            </Div>
             <p className="font-xs font-semibold text-gray-300">Web Developer</p>
           </Div>
 
