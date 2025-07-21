@@ -50,7 +50,7 @@ export function Footer ({ onEmailClick, onGetStarted, onNavigate }: HeaderCompon
             <span className="inline-block w-4 h-4 rounded-full bg-gray-500 animate-pulse animate-pulseX"></span>
           </span>
                     </p>
-<Div className="hoverChangeDiv absolute top-14 h-96 w-1/2 bg-white/5 border border-white/20 rounded-3xl backdrop-blur-sm hover:bg-white group flex items-center justify-center transition-colors duration-200">
+<Div onClick={onGetStarted} className="hoverChangeDiv absolute top-14 h-96 w-1/2 bg-white/5 border border-white/20 rounded-3xl backdrop-blur-sm  hover:bg-white group flex items-center justify-center transition-colors duration-200">
   {/* + Sign */}
   <div className="text-white text-4xl transition-all duration-200 transform group-hover:rotate-180 group-hover:scale-150 group-hover:text-black origin-center">
     +
