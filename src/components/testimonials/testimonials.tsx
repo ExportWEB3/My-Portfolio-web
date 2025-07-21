@@ -12,7 +12,7 @@ export function Testimonials () {
 
     return (
         <Div className="w-full h-h1000 bg-black Container paddingT containerRog containerCustom">
-            <Div className="w-full h-40 flex items-end relative testiDiv">
+            <Div className="w-full h-40 flex items-end relative testiDiv" animateOnView >
                 <p className="text-gray-400">( What People Say )</p>
                 <h1 className="text-8xl font-medium tracking-tighter text-white ml-72">Testimonials
                                             <span className="ml-2">
