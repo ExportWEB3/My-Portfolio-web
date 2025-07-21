@@ -59,7 +59,17 @@ export default {
         w150: "900px",
         w35: "35%",
         w38: "38%",
-      }
+      },
+      animation: {
+        'ping-custom': 'ping-custom 2s ease-out infinite',
+      },
+      keyframes: {
+        'ping-custom': {
+          '0%': { transform: 'scale(0.6)', opacity: '1' },
+          '70%': { transform: 'scale(1.8)', opacity: '0' },
+          '100%': { transform: 'scale(2)', opacity: '0' },
+        },
+      },
     },
   },
   plugins: [],

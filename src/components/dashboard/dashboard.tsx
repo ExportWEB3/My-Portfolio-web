@@ -77,12 +77,17 @@ const handleScrollTo = (id: string) => {
             <img src={userImg} className="w-24" />
             <Div className="flex flex-col w-72 h-full">
               <p className="font-semibold text-xl text-white">Emmanuel O.</p>
-          <p className="text-gray-400 flex items-center">
-            <span className="mr-2">
-              <span className="inline-block w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-            </span>
-            Available for work
-          </p>            </Div>
+<p className="text-gray-400 flex items-center">
+  <span className="relative mr-2 w-3 h-3 flex items-center justify-center">
+    {/* Outer ring animation */}
+    <span className="absolute w-full h-full rounded-full bg-green-400 opacity-75 animate-ping-custom"></span>
+    
+    {/* Inner solid dot */}
+    <span className="w-1.5 h-1.5 rounded-full bg-green-500 z-10"></span>
+  </span>
+  Available for work
+</p>           
+          </Div>
           </Div>
 
           <Div className="w-full h-16 mt-5 flex gap-3 items-center p-2 fontBtnDivXoh">
@@ -220,16 +225,22 @@ const handleScrollTo = (id: string) => {
 
       <Div className="w-full h-96 bg-black Container flex items-end containerCustom " >
         <Div className="w-full h-1/2 flex items-center availaRes" animateOnView>
-        <Div className="w-1/2 h-1/2 flex items-center">
+        <Div className="w-4/6 h-1/2 flex items-center">
         <img src={userImg} className="w-24 -ml-5" />
-        <Div className="w-40 h-12 flex flex-col">
+        <Div className="w-72 h-12 flex flex-col">
           <p className="text-white font-medium">Emmanuel O.</p>
-          <p className="text-gray-400 flex items-center">
-            <span className="mr-2">
-              <span className="inline-block w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-            </span>
-            Available for work
-          </p>
+<p className="text-gray-400 flex items-center">
+  <span className="relative mr-2 w-3 h-3 flex items-center justify-center">
+    {/* Outer ring animation */}
+    <span className="absolute w-full h-full rounded-full bg-green-400 opacity-75 animate-ping-custom"></span>
+    
+    {/* Inner solid dot */}
+    <span className="w-1.5 h-1.5 rounded-full bg-green-500 z-10"></span>
+  </span>
+  Available for work
+</p>
+
+
         </Div>
         </Div>
         <Div className="w-1/2 h-full space-y-5 py-5 descDiv">
