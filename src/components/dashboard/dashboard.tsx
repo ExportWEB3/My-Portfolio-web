@@ -303,7 +303,7 @@ const handleScrollTo = (id: string) => {
                           <img src={proj1Img} className="w-full h-h350 mt-16 projImgRes rounded-md" />
             <Div className="w-full h-12 flex items-center relative mt-16">
               <p className="text-gray-300 font-medium">May 15,2025</p>
-              <p className="absolute right-0 text-gray-300 font-medium">Tildette Project</p>
+              <p className="absolute right-0 text-gray-300 font-medium">Tildette Project(click to view project)</p>
             </Div>
             <h2 className="text-white text-4xl tracking-tight mt-10">Landing Page</h2>
             <Div className="w-full h-20 flex items-center gap-5">

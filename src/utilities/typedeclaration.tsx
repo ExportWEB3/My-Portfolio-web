@@ -15,6 +15,9 @@ export interface divAttributes {
   onMouseLeave?: React.MouseEventHandler<HTMLDivElement>;
   onMouseMove?: React.MouseEventHandler<HTMLDivElement>;
 }
+export type divProps = divAttributes & {
+  animateOnView?: boolean;
+};
 
 export interface buttonAttributes {
   btnName: string;

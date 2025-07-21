@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 
 export function useInViewFade() {
-  const ref = useRef<HTMLDivElement | null>(null);
+  const ref = useRef<HTMLDivElement | null>(null); // ✅ assignable ref
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -25,5 +25,5 @@ export function useInViewFade() {
     return () => observer.disconnect();
   }, []);
 
-  return { ref, isVisible };
+  return { ref, isVisible }; // ✅ return mutable ref
 }
