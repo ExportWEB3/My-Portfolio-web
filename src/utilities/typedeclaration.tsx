@@ -38,6 +38,13 @@ export interface platformData {
   img: string;
 }
 
+export type CountUpOnScrollProps = {
+  target: number;
+  className?: string;
+  duration?: number; // Optional: total time (ms) for animation
+  suffix?: string;   // Optional: like '+', '%', etc.
+};
+
 export type trendOptionsx = "hashtags" | "topics" | "videos" | "locations";
 
 export type timePeriod = "today" | "yesterday" | "pastWeek";

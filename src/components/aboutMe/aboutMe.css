@@ -1,0 +1,73 @@
+
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+
+  .responsive-main {
+    padding: 0 16px;
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .topNameDivRes{
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+  }
+  .topNameDivRes1st{
+    width: 200%;
+    height: 150px !important;
+    margin-left: -100px;
+  }
+  .topNameDivRes2nd{
+    width: 200%;
+    height: 900px;
+    overflow: hidden;
+    margin-left: -100px !important;
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+  .aboutResTxtM{
+    font-size: 38px;
+  }
+  .ResMain002{
+    margin-top: -80px;
+  }
+  .x001ResMainHr{
+    padding: 0px 0px;
+    margin-top: -100px;
+  }
+  .numbersDivRes{
+    padding: 0px 0px;
+    height: 800px;
+  }
+  .numbersDivResInner{
+  }
+  .numbersDivResInnerTxt{
+    font-size: 40px;
+  }
+  .numbersDivResInnerAnim{
+    display: flex;
+    flex-direction: column !important;
+    gap: 60px;
+    margin-top: -30px;
+  }
+  .numbersDivResInnerAnimM{
+    width: 100%;
+  }
+  .mainBimageRes{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    height: fit-content;
+    margin-top: -100px;
+    margin-bottom: -180px;
+  }
+  .BimageResDiv{
+    width: 100%;
+  }
+  .mainBimagetXTRes{
+    padding: 0px 0px;
+    width: 100%;
+    margin-top: 20px;
+  }
+}

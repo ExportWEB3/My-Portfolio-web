@@ -21,12 +21,14 @@ import logoo from "../../images/logoo.png"
 import tildetteVid from "../../videos/TildetteProject.webm"
 import signUp from "../../images/signUp.png"
 import proj1Img from "../../images/proj1.png"
+import { Navigate, useNavigate } from "react-router-dom";
 
 
 
 export function DashboardComponent() {
   // Text slider state
   const [showAlt, setShowAlt] = useState(false);
+  const navigate =  useNavigate()
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -87,14 +89,15 @@ const handleScrollTo = (id: string) => {
             <Button
             type="button"
             btnText="Get In Touch"
-            className="h-10 w-40 fontBtnDivXohBtn bg-slate-50 text-black"
+            className="h-10 w-40 fontBtnDivXohBtn bg-slate-50 text-black hover:text-white hover:bg-black hover:border hover:border-white transition-colors duration-200"
             onClick={handleEmail}
              />
 
             <Button
             type="button"
             btnText="About Me"
-            className="h-10 w-40 fontBtnDivXohBtn  btnGrad text-white "
+            className="h-10 w-40 fontBtnDivXohBtn border-white/90 text-white transition-all duration-200 shadow-[inset_0_0_24px_0_rgba(255,255,255,0.15)] hover:shadow-[inset_0_0_24px_0_rgba(100,100,100,0.15)]"
+            onClick={() => navigate("/about-me")}
              />
           </Div>
           </Div>
@@ -211,7 +214,7 @@ const handleScrollTo = (id: string) => {
                   }}
                 ></span>
               </span>
-            </span> Designs That Drive Real Results.
+            </span> Websites That Drive Real Results.
           </p>
         </Div>
       </Div>
@@ -238,8 +241,8 @@ const handleScrollTo = (id: string) => {
         </Div>
         <Div className="w-1/2 h-full space-y-5 py-5 descDiv">
         <p className="text-gray-400">002</p>
-        <p className="text-gray-400">I'm a web designer specializing in creating sleek, high-converting websites that turn visitors into clients. 
-          I help freelancers and agencies elevate their online presence with clean, strategic designs that drive real results.</p>
+        <p className="text-gray-400">I'm a web Developer specializing in creating sleek, high-converting websites that turn visitors into clients. 
+          I help freelancers and agencies elevate their online presence with clean, strategic Websites that drive real results.</p>
         </Div>
         </Div>
       </Div>
@@ -275,7 +278,7 @@ const handleScrollTo = (id: string) => {
           <Div className="flex flex-col w-1/2 h-full justify-end space-y-10 servDiv" animateOnView>
             <p className="text-gray-400">( Services )</p>
           <Div className="w-full h-48 flexitems-end driveDiv">
-          <p className="text-gray-400 textWds tracking-tight driveDivTxt">Customized Web Design Solutions to Elevate Your Brand and <a className="text-white"> Drive Conversions.</a></p>
+          <p className="text-gray-400 textWds tracking-tight driveDivTxt">Customized Web Solutions to Elevate Your Brand and <a className="text-white"> Drive Conversions.</a></p>
           </Div>
           </Div>
           <Div className="w-1/2 h-20 flex justify-end items-center absolute bottom-0 right-24 driveDivBtnDiv">
@@ -384,7 +387,7 @@ const handleScrollTo = (id: string) => {
           <p className="text-white text-4xl tracking-tighter">Discovery</p>
         </Div>
         <Div className="w-full h-14">
-          <p className="text-gray-400">Understanding your goals, audience, and vision to set a clear direction before design begins.</p>
+          <p className="text-gray-400">Understanding your goals, audience, and vision to set a clear direction before Web development begins.</p>
         </Div>
         <Button
         type="button"
@@ -407,7 +410,7 @@ const handleScrollTo = (id: string) => {
           <p className="text-white text-4xl tracking-tighter">Strategy</p>
         </Div>
         <Div className="w-full h-14">
-          <p className="text-gray-400">Translating insights into structure—defining layout, content hierarchy, and user flow to guide the design.</p>
+          <p className="text-gray-400">Translating insights into structure—defining layout, content hierarchy, and user flow to guide the Website.</p>
         </Div>
 
         </Div>

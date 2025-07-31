@@ -3,11 +3,13 @@ import { Button, ButtonComponent } from "../button/botton";
 import { Div } from "../divComponent/div";
 import './header.css';
 import { HeaderComponentProps } from "../../utilities/typedeclaration";
+import { useNavigate } from "react-router-dom";
 
 
 export function HeaderComponent({ onNavigate, onEmailClick, onGetStarted }: HeaderComponentProps) {
   const [hovered, setHovered] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate()
 
   const handleScrollTo = (id: string) => {
     onNavigate(id);
@@ -42,7 +44,7 @@ export function HeaderComponent({ onNavigate, onEmailClick, onGetStarted }: Head
       <Div className="hidden md:flex ml-20 w-48 h-10 items-center justify-between midTopHead">
         <p className="text-gray-300 hover:text-gray-500 cursor-pointer" onClick={() => handleScrollTo("home")}>Home</p>
         <p className="text-gray-300 hover:text-gray-500 cursor-pointer" onClick={() => handleScrollTo("projects")}>Projects</p>
-        <p className="text-gray-300 hover:text-gray-500 cursor-pointer" onClick={() => handleScrollTo("about")}>About</p>
+        <p className="text-gray-300 hover:text-gray-500 cursor-pointer" onClick={() => navigate("/about-me")}>About</p>
       </Div>
 
       {/* Desktop Buttons */}
@@ -115,7 +117,7 @@ export function HeaderComponent({ onNavigate, onEmailClick, onGetStarted }: Head
   <Div className="fixed top-0 left-0 w-full h-screen bg-black bg-opacity-90 backdrop-blur-md flex flex-col items-center justify-center space-y-6 z-50 animate-fade-down">
     <p className="text-white text-xl hover:text-gray-400 cursor-pointer" onClick={() => handleScrollTo("home")}>Home</p>
     <p className="text-white text-xl hover:text-gray-400 cursor-pointer" onClick={() => handleScrollTo("projects")}>Projects</p>
-    <p className="text-white text-xl hover:text-gray-400 cursor-pointer" onClick={() => handleScrollTo("about")}>About</p>
+    <p className="text-white text-xl hover:text-gray-400 cursor-pointer" onClick={() => navigate("/about-me")}>About</p>
 
     <Div className="flex items-center justify-center w-40 h-12 bg-white/10 rounded-md border border-white/10 px-4 cursor-pointer" onClick={handleEmail}>
       <span className="text-gray-300 mr-2 whitespace-nowrap">Get in touch</span>
