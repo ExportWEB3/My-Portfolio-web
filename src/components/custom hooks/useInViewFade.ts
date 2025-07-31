@@ -25,5 +25,5 @@ export function useInViewFade() {
     return () => observer.disconnect();
   }, []);
 
-  return { ref, isVisible };
+  return { ref, isVisible};
 }
