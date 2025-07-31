@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 
 export function useInViewFade() {
-  const ref = useRef<HTMLDivElement | null>(null); // ✅ assignable ref
+  const ref = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ export function useInViewFade() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // Only trigger once
+          observer.disconnect();
         }
       },
       {
@@ -25,5 +25,5 @@ export function useInViewFade() {
     return () => observer.disconnect();
   }, []);
 
-  return { ref, isVisible }; // ✅ return mutable ref
+  return { ref, isVisible };
 }

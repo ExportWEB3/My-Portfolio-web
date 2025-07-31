@@ -139,7 +139,7 @@ const handleScrollTo = (id: string) => {
 
         <Div className="w-full h-40 bg-black mt-12">
           <p className="text-gray-400 tracking-tight">
-            // Worked with Languages like
+            // My Stack
           </p>
           <Div className="w-full h-full flex items-center justify-center space-x-8 -ml-1 logoDiv  " animateOnView>
             {/* Example logos, replace src with your actual logo paths */}
@@ -155,6 +155,12 @@ const handleScrollTo = (id: string) => {
             </Div>
             <Div className="logoDivImg logoDivImg4 w-[260px] h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(16,255,16,0.15)]">
               <img src="https://aidenraadh.com/_next/image?url=https%3A%2F%2Faidenraadh-bucket.s3.ap-southeast-1.amazonaws.com%2FGroup_68007_d3fa3d5f53.png&w=3840&q=75" alt="Logo 4" className="h-12 object-contain" />
+            </Div>
+                        <Div className="logoDivImg logoDivImg5 hidden w-[260px] h-28 items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(16,255,16,0.15)]">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/862px-React-icon.svg.png" alt="Logo 4" className="h-12 object-contain" />
+            </Div>
+                        <Div className="logoDivImg logoDivImg6 hidden w-[260px] h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(16,255,16,0.15)]">
+              <img src="https://cdn.buttercms.com/2q5r816LTo2uE9j7Ntic" alt="Logo 4" className="h-12 object-contain" />
             </Div>
           </Div>
           <p className="text-gray-400 tracking-tight underline hover:no-underline decoration-2 underline-offset-4 cursor-pointer ">And more --</p>
