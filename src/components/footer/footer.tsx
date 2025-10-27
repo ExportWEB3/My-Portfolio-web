@@ -35,7 +35,7 @@ export function Footer ({ onEmailClick, onGetStarted, onNavigate }: HeaderCompon
 
 
     return (
-        <Div className="w-full h-h1100 bg-black padding01">
+        <Div className="w-full h-h1000 md:h-h900 bg-black padding01">
             <Div className="w-full h-20 Container containerCustom" animateOnView>            
                 <Div className="w-full h-20 bg-black flex items-end justify-between mainFooterRes">
                 <p className="text-gray-400 foothide">( footer )</p>
@@ -68,21 +68,21 @@ export function Footer ({ onEmailClick, onGetStarted, onNavigate }: HeaderCompon
                 </Div>
 
 
-            <Div className="w-full h-52 mt-12 gap-2 flex almLastDiv" animateOnView>
-                <Div className="w-1/3 h-full flex flex-col space-y-5 almLastDiv1">
+            <Div className="w-full  h-h400 md:h-52 mt-14 gap-2 space-y-5 flex flex-col md:flex-row " animateOnView>
+                <Div className="w-1/3 h-fit md:h-full flex flex-col space-y-5 bg-">
                 <p className="text-gray-400">( links )</p>
-                <p className="text-white font-medium" onClick={() => navigate("/")}>Home</p>
-                <p className="text-white font-medium" onClick={() => navigate("/about-me")}>About</p>
-                <p className="text-white font-medium" onClick={() => handleScrollTo("projects")}>Projects</p>
-                <p className="text-white font-medium" onClick={onGetStarted}>Book a call</p>
+                <p className="text-white font-light" onClick={() => navigate("/")}>Home</p>
+                <p className="text-white font-light" onClick={() => navigate("/about-me")}>About</p>
+                <p className="text-white font-light" onClick={() => handleScrollTo("projects")}>Projects</p>
+                <p className="text-white font-light" onClick={onGetStarted}>Book a call</p>
                 </Div>
-                <Div className="w-1/3 h-full flex flex-col items-center relative almLastDiv2">
+                <Div className="w-full md:w-1/3 h-fit md:h-full flex flex-col md:items-center relative gap-5">
                 <p className="text-gray-400">( È×þÖR† ) </p>
-                <p className="absolute bottom-0 text-center text-gray-400 almLastDiv2Top">I'm a web developer specialized in creating sleek, high-converting websites that turn visitors into clients.</p>
+                <p className="md:absolute bottom-0 md:text-center text-gray-400">I'm a web developer specialized in creating sleek, high-converting websites that turn visitors into clients.</p>
                 </Div>
-                <Div className="w-1/3 h-full flex flex-col items-end relative almLastDiv3">
+                <Div className="w-1/3 h-fit md:h-full flex flex-col gap-4 md:items-end relative">
                 <p className="text-gray-400">( follow me )</p>
-<Div className="w-fit h-12 flex space-x-5 absolute bottom-0 ">
+<Div className="w-fit h-12 flex space-x-5 md:absolute bottom-0 ">
           {/* Social Icons */}
           <a
   href="https://linkedin.com/in/your-profile"

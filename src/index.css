@@ -4,6 +4,7 @@
 
 html, body {
   scroll-behavior: smooth;
+  background: #000;
 }
 
 
@@ -69,6 +70,22 @@ html, body {
   }
 }
 
+@layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    display: flex !important;
+    width: 200% !important; /* two groups side-by-side */
+    animation: marquee 6s linear infinite;
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused !important;
+  }
+}
 
 /* shadow starts here */
 .shadowx {

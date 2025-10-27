@@ -10,6 +10,6 @@ export default defineConfig({
     watch: {
       usePolling: true,
     },
-    allowedHosts: ['.loca.lt'], // optional for backend dev tunneling
+    allowedHosts: ['.ngrok-free.app'], // optional for backend dev tunneling
   },
 });
