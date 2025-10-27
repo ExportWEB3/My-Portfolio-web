@@ -23,7 +23,7 @@ export function PlusGridBackground() {
   const plusArray = Array.from({ length: plusCount });
 
   return (
-    <div className="w-full h-full inset-0 pointer-events-none bg-black plusDiv">
+    <div className="w-full h-full inset-0 pointer-events-none bg-black plusDiv absolute">
       <div className="w-full h-full plus-grid grid grid-cols-[repeat(auto-fill,_minmax(30px,_1fr))] gap-4 opacity-10 px-4 py-6">
         {plusArray.map((_, i) => (
           <span

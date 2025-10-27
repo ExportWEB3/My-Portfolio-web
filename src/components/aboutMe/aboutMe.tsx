@@ -12,6 +12,7 @@ import { Testimonials } from "../testimonials/testimonials";
 import { Questions } from "../questions/questions";
 import { Footer } from "../footer/footer";
 import { CountUpOnScroll } from "../countUpOnscroll/countUp";
+import { stackCard } from "../../data";
 
 
 
@@ -41,13 +42,13 @@ const handleScrollTo = (id: string) => {
     return (
         <>
             <HeaderComponent  onNavigate={handleScrollTo} onEmailClick={handleEmail} onGetStarted={handleGetStarted}/>
-        <Div className="bg-black w-full h-full flex flex-col overflow-visible responsive-main">
-            <Div className="w-full h-[700px] flex Container space-x-5 topNameDivRes">
+        <Div className="w-full h-full flex flex-col overflow-visible">
+            <Div className="w-full h-[800px] md:h-[500px] flex flex-col  md:flex-row md:space-x-5 overflow-hidden px-2 md:px-10 lg:px-28">
 
-                <Div className="w-[30%] h-full relative topNameDivRes1st" animateOnView>
+                <Div className="w-full md:w-[30%] h-[200px] relative" animateOnView>
                     <Div className="w-4/6 h-1/2 flex items-center">
         <img src={userImg} className="w-24 -ml-5" />
-        <Div className="w-72 h-12 flex flex-col">
+        <Div className=" md:w-72 h-12 flex flex-col">
           <p className="text-white font-medium">Emmanuel O.</p>
 <p className="text-gray-400 flex items-center">
   <span className="relative mr-2 w-3 h-3 flex items-center justify-center">
@@ -62,7 +63,7 @@ const handleScrollTo = (id: string) => {
         </Div>
         </Div>
 
-         <Div className="w-52 h-12 flex absolute bottom-0 space-x-8 iconTxtIconRes">
+         <Div className="w-52 h-12 flex absolute bottom-0 space-x-8">
           {/* Social Icons */}
 <a
   href="https://linkedin.com/in/your-profile"
@@ -108,8 +109,9 @@ const handleScrollTo = (id: string) => {
         </Div>
                 </Div>
 
-                <Div className="w-[65%] h-full pl-20 bg-black topNameDivRes2nd">
-                          <Div id="about" className="w-full h-h350  bg-black" >
+
+                <Div className=" w-full md:w-[65%] h-full bg-black ">
+                          <Div id="about" className="w-full h-h350 " >
         <p className="text-gray-400 mt-10">(About)</p>
         <Div className="w-full h-[400px] relative flex items-center -mt-24 aboutResTxtDiv" animateOnView>
           <p className="text-6xl  text-gray-400 tracking-tighter relative inline-block aboutResTxtM">
@@ -130,44 +132,48 @@ const handleScrollTo = (id: string) => {
           </p>
         </Div>
       </Div>
+      
 
-      <Div className="w-full h-[100px] bg-black ResMain002" animateOnView>
+      <Div className="w-full h-[100px] bg-black" animateOnView>
         <p className="text-gray-400">002</p>
         <p className="text-gray-400">I'm a web Developer specializing in creating sleek, high-converting websites that turn visitors into clients. 
           I help freelancers and agencies elevate their online presence with clean, strategic designs that drive real results.</p>
         </Div>
-
-        <Div className="w-full h-40 bg-black mt-12">
-          <p className="text-gray-400 tracking-tight">
-            // My Stack
-          </p>
-          <Div className="w-full h-full flex items-center justify-center space-x-8 -ml-1 logoDiv  " animateOnView>
-            {/* Example logos, replace src with your actual logo paths */}
-            <Div className="logoDivImg logoDivImg1 w-[260px] h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="https://miro.medium.com/v2/resize:fit:1400/1*3w6NmjQO5W-dyk1IeFCLZQ.jpeg" alt="Logo 1" className="h-16 object-contain" />
-            </Div>
-            <Div className="logoDivImg logoDivImg2 w-[260px] h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="https://blog.kakaocdn.net/dna/NLnRQ/btsIPJgQJVQ/AAAAAAAAAAAAAAAAAAAAAMxdjAmsLnYkpwK2QqbF5YT-dlmHl364X_iLUdTmQG72/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1753973999&allow_ip=&allow_referer=&signature=1cC8LqZo7RQqH2sfuEFpuTCAuqo%3D"
-               alt="Logo 2" className="h-18 object-contain" />
-            </Div>
-            <Div className="logoDivImg logoDivImg3 w-[260px] h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968222.png" alt="Logo 3" className="h-16 object-contain" />
-            </Div>
-            <Div className="logoDivImg logoDivImg4 w-[260px] h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="https://aidenraadh.com/_next/image?url=https%3A%2F%2Faidenraadh-bucket.s3.ap-southeast-1.amazonaws.com%2FGroup_68007_d3fa3d5f53.png&w=3840&q=75" alt="Logo 4" className="h-12 object-contain" />
-            </Div>
-                        <Div className="logoDivImg logoDivImg5 hidden w-[260px] h-28 items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/862px-React-icon.svg.png" alt="Logo 4" className="h-12 object-contain" />
-            </Div>
-                        <Div className="logoDivImg logoDivImg6 hidden w-[260px] h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src="https://cdn.buttercms.com/2q5r816LTo2uE9j7Ntic" alt="Logo 4" className="h-12 object-contain" />
-            </Div>
-          </Div>
-          <p className="text-gray-400 tracking-tight underline hover:no-underline decoration-2 underline-offset-4 cursor-pointer ">And more --</p>
-        </Div>
-
                 </Div>
+                
             </Div>
+
+<Div className="w-full h-32 overflow-hidden">
+  <div className="slider">
+    <div className="slide-track">
+      {stackCard.map((stack, index) => (
+        <Div
+          key={`first-${index}`}
+          className="slide w-[80px] md:w-[100px] h-20 flex flex-col items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(255,255,255,0.15)] hover:shadow-[inset_0_0_24px_0_rgba(100,100,100,0.15)]"
+        >
+          <img 
+            src={stack.img} 
+            alt={`Stack ${index}`} 
+            className={`w-16 h-16 ${stack.img.includes('express') ? 'invert brightness-200' : ''}`}
+          />
+        </Div>
+      ))}
+      {/* Duplicate for seamless loop */}
+      {stackCard.map((stack, index) => (
+        <Div
+          key={`second-${index}`}
+          className="slide w-[80px] md:w-[100px] h-20 flex flex-col items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(255,255,255,0.15)] hover:shadow-[inset_0_0_24px_0_rgba(100,100,100,0.15)]"
+        >
+          <img 
+            src={stack.img} 
+            alt={`Stack ${index}`} 
+            className={`w-16 h-16 ${stack.img.includes('express') ? 'invert brightness-200' : ''}`}
+          />
+        </Div>
+      ))}
+    </div>
+  </div>
+</Div>
 
             <Div className="w-full h-[200px] Container x001ResMainHr" animateOnView>
                 <hr className="border-gray-800 my-4 mt-14" />
@@ -180,34 +186,34 @@ const handleScrollTo = (id: string) => {
         </Div>
             </Div>
 
-            <Div className="w-full h-[350px] bg-black flex flex-col Container numbersDivRes" animateOnView>
+            <Div className="w-full h-[650px] md:!h-[400px] flex flex-col" animateOnView>
                 <Div className="w-full h-10 flex justify-center">
                     <p className="text-gray-500">( Numbers )</p>
                 </Div>
-                <Div className="w-full h-28 flex justify-center numbersDivResInner">
+                <Div className="w-full h-28 flex justify-center">
                     <p className="text-8xl font-medium text-gray-400 numbersDivResInnerTxt">By the <a className="text-white">Numbers.</a></p>
                 </Div>
-                          <Div className="w-full h-36 flex items-center justify-center space-x-8 -ml-1 logoDiv bg-black mt-7 numbersDivResInnerAnim" animateOnView>
-            <Div className="logoDivImg logoDivImg1 numbersDivResInnerAnimM w-[320px] h-32 space-y-5 flex flex-col items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(255,255,255,0.15)] hover:shadow-[inset_0_0_24px_0_rgba(100,100,100,0.15)]">
-<CountUpOnScroll target={50} className="text-white text-3xl" suffix="+" />
+                          <Div className="w-full min-h-[400px] !px-5 md:h-36 flex items-center justify-center space-y-5 md:space-y-0 md:space-x-4 flex-col md:flex-row " animateOnView>
+            <Div className="w-[320px] h-32 space-y-5 flex flex-col items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(255,255,255,0.15)] hover:shadow-[inset_0_0_24px_0_rgba(100,100,100,0.15)]">
+<CountUpOnScroll target={14} className="text-white text-3xl" suffix="+" />
             <p className="text-white text-lg">Projects Completed</p>
             </Div>
-            <Div className="logoDivImg logoDivImg1 numbersDivResInnerAnimM w-[320px] h-32 space-y-5 flex flex-col items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(255,255,255,0.15)] hover:shadow-[inset_0_0_24px_0_rgba(100,100,100,0.15)]">
+            <Div className=" w-[320px] h-32 space-y-5 flex flex-col items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(255,255,255,0.15)] hover:shadow-[inset_0_0_24px_0_rgba(100,100,100,0.15)]">
 <CountUpOnScroll target={8} className="text-white text-3xl" suffix="+" />
             <p className="text-white text-lg">Website Experience</p>
             </Div>
-            <Div className="logoDivImg logoDivImg1 numbersDivResInnerAnimM w-[320px] h-32 space-y-5 flex flex-col items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(255,255,255,0.15)] hover:shadow-[inset_0_0_24px_0_rgba(100,100,100,0.15)]">
-<CountUpOnScroll target={100} className="text-white text-3xl" suffix="%" />
+            <Div className="w-[320px] h-32 space-y-5 flex flex-col items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[inset_0_0_24px_0_rgba(255,255,255,0.15)] hover:shadow-[inset_0_0_24px_0_rgba(100,100,100,0.15)]">
+<CountUpOnScroll target={99.99} className="text-white text-3xl" suffix="%" />
             <p className="text-white text-lg">Client Satisfaction rate</p>
             </Div>
             </Div>
             </Div>
 
-            <Div className="w-full h-[900px] bg-black Container flex items-center mainBimageRes" animateOnView> 
-              <Div className="w-1/2 h-[75%] BimageResDiv">
+            <Div className="w-full h-[1300px] md:h-[900px] bg-black flex flex-col md:flex-row items-center space-y-2 gap-10 px-2 md:px-10 lg:px-28" animateOnView> 
+              <Div className="w-full md:w-1/2 h-[75%]">
               <img src="https://framerusercontent.com/images/9KSq3srT4hJAp5lQl3HXOxQbiS8.png" className="w-full h-full rounded-2xl" />
               </Div>
-                          <Div className="w-1/2 h-[50%] Container mainBimagetXTRes">
+                          <Div className="w-full md:w-1/2 h-[50%]">
                           <p className="text-gray-400">( About )</p>
                           <p className="text-gray-400 text-6xl tracking-tighter mt-10">Websites that works. <a className="text-white"> Without the fluff.</a></p>
                           <p className="text-gray-400 mt-10 font-medium text-lg tracking-tighter">I help modern brands turn Designs into clean, high-converting websites and scalable WebPage systems—without overcomplicating the process.</p>

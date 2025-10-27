@@ -1,27 +1,19 @@
 import { useState, useEffect } from "react";
 import { Div } from "../divComponent/div";
-import { Input } from "../input/input";
-import { Icon } from "../iconComponent/icon";
 import './dashboard.css'
 import { HeaderComponent } from "../header/header";
 import { Button } from "../button/botton";
-import { ToggleBox } from "../toggle/toggle";
-import { ExploreProjectHover } from "../projectHover/hover";
-import { useInViewFade } from "../custom hooks/useInViewFade";
 import { PlusGridBackground } from "../gridBackground/gridBackground";
 import { Testimonials } from "../testimonials/testimonials";
 import { Questions } from "../questions/questions";
 import { Footer } from "../footer/footer";
 import { Services } from "../services/services";
-import userImg from "../../images/user.webp"
-import ipsum from "../../images/ipsumlog.png"
-import loo from "../../images/loo.avif"
-import framer from "../../images/framer.png"
-import logoo from "../../images/logoo.png"
-import tildetteVid from "../../videos/TildetteProject.webm"
-import signUp from "../../images/signUp.png"
-import proj1Img from "../../images/proj1.png"
-import { Navigate, useNavigate } from "react-router-dom";
+import {ProjectsSection} from "../projects/ProjectsSection";
+import {ServicesBlock} from "../services/ServicesBlock";
+import AboutSection from "../about/AboutSection";
+import {DiscoveryCards} from "../discoSection/DiscoveryCards";
+import userImg from "../../images/user.webp";
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -37,9 +29,21 @@ export function DashboardComponent() {
     return () => clearInterval(interval);
   }, []);
 
-  const handleRedirect = () => {
-window.open("https://exportweb3.github.io/Ad-Projects/", "_blank");
-};
+  const handleRedirect = (project: any) => {
+    console.log("handleRedirect received:", project);
+    const title = typeof project === "string"
+      ? project
+      : project?.title ?? project?.name ?? "";
+
+    const slug = title.toString().trim().toLowerCase();
+
+    if (slug === "tildette" || slug.includes("tildette")) {
+      window.open("https://exportweb3.github.io/Ad-Projects/", "_blank", "noopener,noreferrer");
+    } else {
+      window.open("https://formula-ai-4ylf.vercel.app/", "_blank", "noopener,noreferrer");
+    }
+  };
+
 const handleScrollTo = (id: string) => {
   const el = document.getElementById(id);
   if (el) {
@@ -62,7 +66,7 @@ const handleScrollTo = (id: string) => {
     <HeaderComponent  onNavigate={handleScrollTo} onEmailClick={handleEmail} onGetStarted={handleGetStarted}/>
         <Div id="home" className=" bg-black h-screen w-full responsive-main" >
       <Div className="w-full Container containerRes heightF flex items-center" >
-        <Div className="w-w100 h-h270 bg-white cardRes rounded-xl p-0.5" animateOnView>
+        <Div className="w-full md:w-full lg:w-[400px] md:h-h270 bg-white  rounded-xl p-0.5" animateOnView>
           <Div className="w-full bg-black rounded-xl px-5 py-2 ">
           <Div className="w-full h-10 flex items-center justify-between ">
             <p className="font-xs font-semibold text-gray-300">Web Developer</p>
@@ -85,18 +89,18 @@ const handleScrollTo = (id: string) => {
           </Div>
           </Div>
 
-          <Div className="w-full h-16 mt-5 flex gap-3 items-center p-2 fontBtnDivXoh">
+          <Div className="w-full h-16 mt-5 flex gap-3 items-center !text-xs">
             <Button
             type="button"
             btnText="Get In Touch"
-            className="h-10 w-40 fontBtnDivXohBtn bg-slate-50 text-black hover:text-white hover:bg-black hover:border hover:border-white transition-colors duration-200"
+            className="h-10 !w-28 sm:!w-40 fontBtnDivXohBtn bg-slate-50 text-black hover:text-white hover:bg-black hover:border hover:border-white transition-colors duration-200"
             onClick={handleEmail}
              />
 
             <Button
             type="button"
             btnText="About Me"
-            className="h-10 w-40 fontBtnDivXohBtn border-white/90 text-white transition-all duration-200 shadow-[inset_0_0_24px_0_rgba(255,255,255,0.15)] hover:shadow-[inset_0_0_24px_0_rgba(100,100,100,0.15)]"
+            className="h-10 !w-28 sm:!w-40 fontBtnDivXohBtn sm:border-white/90 text-white transition-all duration-200 sm:shadow-[inset_0_0_24px_0_rgba(255,255,255,0.15)] sm:hover:shadow-[inset_0_0_24px_0_rgba(100,100,100,0.15)]"
             onClick={() => navigate("/about-me")}
              />
           </Div>
@@ -127,7 +131,7 @@ const handleScrollTo = (id: string) => {
                 <span className="text-gray-300">Let's help you</span>
               </h1>
               {/* Fixed green underline */}
-              <span className="block w-32 h-1 mt-2 bg-green-500 rounded absolute left-0 bottom-0 bottomResLine"></span>
+              <span className="block w-full h-1 mt-2 bg-green-500 rounded absolute left-0 bottom-0 bottomResLine"></span>
             </div>
             <h1 className="text-6xl moveResTxt moveResTxtX font-medium font12 text-gray-300 tracking-tighter mt-2">
               <a className="text-white">stands out</a>---and sells.
@@ -185,262 +189,24 @@ const handleScrollTo = (id: string) => {
           <p className="text-gray-400 portResTxt">
             Welcome to my portfolio! Here you'll find a showcase of my latest projects, creative solutions, and passion for web development. I build modern, impactful websites that help brands and individuals stand out. Explore my work and let’s create something amazing together.
           </p>
-        </Div>    
+        </Div> 
         </Div>
-        <hr className="border-gray-800 my-4 mt-14" />
-        <Div className="w-full h-10 flex items-center res001">
-          <p className="text-gray-400">001</p>
-          <Div className="exMargin flex-1 h-full flex justify-between resHomeEx">
-            <p className="text-gray-400" >Home</p>
-            <p className=" text-gray-400">Export</p>
-          </Div>
-        </Div>
-      </Div>
+       </Div>
 
-      <Div id="about" className="w-full h-h350 Container bg-black padding space-y-10 containerCustom aboutRes" >
-        <p className="text-gray-400">(About)</p>
-        <Div className="w-3/5 h-32 relative flex items-center aboutResTxtDiv" animateOnView>
-          <p className="text-6xl aboutResTxt text-gray-400 tracking-tighter relative inline-block">
-            Crafting <span className="relative inline-block">
-              <a className="text-white z-10 relative">Conversion-Focused</a>
-              {/* Animated rectangle border */}
-              <span className="absolute left-0 top-0 w-full h-full pointer-events-none z-0">
-                <span className="block absolute border-2 border-green-500 rounded-md"
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    boxSizing: 'border-box',
-                    animation: 'rectMove 4s linear infinite'
-                  }}
-                ></span>
-              </span>
-            </span> Websites That Drive Real Results.
-          </p>
-        </Div>
-      </Div>
-
-      <Div className="w-full h-96 bg-black Container flex items-end containerCustom " >
-        <Div className="w-full h-1/2 flex items-center availaRes" animateOnView>
-        <Div className="w-4/6 h-1/2 flex items-center">
-        <img src={userImg} className="w-24 -ml-5" />
-        <Div className="w-72 h-12 flex flex-col">
-          <p className="text-white font-medium">Emmanuel O.</p>
-<p className="text-gray-400 flex items-center">
-  <span className="relative mr-2 w-3 h-3 flex items-center justify-center">
-    {/* Outer ring animation */}
-    <span className="absolute w-full h-full rounded-full bg-green-400 opacity-75 animate-ping-custom"></span>
-    
-    {/* Inner solid dot */}
-    <span className="w-1.5 h-1.5 rounded-full bg-green-500 z-10"></span>
-  </span>
-  Available for work
-</p>
+        <AboutSection />
 
 
-        </Div>
-        </Div>
-        <Div className="w-1/2 h-full space-y-5 py-5 descDiv">
-        <p className="text-gray-400">002</p>
-        <p className="text-gray-400">I'm a web Developer specializing in creating sleek, high-converting websites that turn visitors into clients. 
-          I help freelancers and agencies elevate their online presence with clean, strategic Websites that drive real results.</p>
-        </Div>
-        </Div>
-      </Div>
-
-      <Div className="w-full h-40 bg-black Container containerCustom" >
-          <p className="text-gray-400 tracking-tight">
-            // Worked with companies like
-          </p>
-          <Div className="w-full h-full flex items-center justify-center space-x-8 -ml-1 logoDiv  " animateOnView>
-            {/* Example logos, replace src with your actual logo paths */}
-            <Div className="logoDivImg logoDivImg1 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src={ipsum} alt="Logo 1" className="h-16 object-contain" />
-            </Div>
-            <Div className="logoDivImg logoDivImg2 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src={loo} alt="Logo 2" className="h-16 object-contain" />
-            </Div>
-            <Div className="logoDivImg logoDivImg3 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src={framer} alt="Logo 3" className="h-10 object-contain" />
-            </Div>
-            <Div className="logoDivImg logoDivImg4 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src={logoo} alt="Logo 4" className="h-8 object-contain" />
-            </Div>
-            <Div className="logoDivImg logoDivImg5 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src={ipsum} alt="Logo 5" className="h-12 object-contain" />
-            </Div>
-            <Div className="logoDivImg logoDivImg6 w-64 h-28 flex items-center justify-center rounded-lg bg-black/60 border border-white/10 shadow-[0_0_24px_0_rgba(16,255,16,0.15)]">
-              <img src={ipsum} alt="Logo 6" className="h-12 object-contain" />
-            </Div>
-          </Div>
-        </Div>
-
-        <Div className="w-full h-h450 bg-black Container flex relative containerCustom">
-          <Div className="flex flex-col w-1/2 h-full justify-end space-y-10 servDiv" animateOnView>
-            <p className="text-gray-400">( Services )</p>
-          <Div className="w-full h-48 flexitems-end driveDiv">
-          <p className="text-gray-400 textWds tracking-tight driveDivTxt">Customized Web Solutions to Elevate Your Brand and <a className="text-white"> Drive Conversions.</a></p>
-          </Div>
-          </Div>
-          <Div className="w-1/2 h-20 flex justify-end items-center absolute bottom-0 right-24 driveDivBtnDiv">
-          <Button
-          type="button"
-          btnText="Get In Touch"
-          className=" h-10 w-40 fontBtn bg-black/60 hover:bg-white/10 transition-colors duration-200 border border-white/10 text-white"
-           />
-          </Div>
-        </Div>
-
+        <ServicesBlock />
         <Services />
 
         
 
-        <Div id="projects" className="w-full h-h1100 bg-black padding Container containerCustomX containerRog">
-          <Div className="w-full h-28 mt-10 flex relative items-end recentDiv" animateOnView>
-            <h1 className="text-8xl font-medium tracking-tighter text-gray-400 recentDivTxt">Recent <a className="text-white">Works.</a></h1>
-            <p className="text-gray-400 absolute right-0">(  Projects )</p>
-          </Div>
-          <Div className="w-full h-h700 flex mt-20 gap-5 projectDivHover">
+        <ProjectsSection onProjectClick={handleRedirect} />
 
-            <Div className="w-1/2 h-full relative group projectDivHover1" onClick={handleRedirect}>
-                          <ExploreProjectHover />
-                          <img src={proj1Img} className="w-full h-h350 mt-16 projImgRes rounded-md" />
-            <Div className="w-full h-12 flex items-center relative mt-16">
-              <p className="text-gray-300 font-medium text-xs">May 15,2025</p>
-              <p className="absolute right-0 text-gray-300 font-medium">Tildette Project(click to view project)</p>
-            </Div>
-            <h2 className="text-white text-4xl tracking-tight mt-10">Landing Page</h2>
-            <Div className="w-full h-20 flex items-center gap-5">
-            <button className="px-6 py-2 rounded-full HoverBtnP bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
-          Typescript
-        </button>
-            <button className="px-6 py-2 rounded-full HoverBtnP bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
-          Tailwind / Css
-        </button>
-                <button className="px-6 hiddenHoverBtnP HoverBtnP py-2 rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
-          Animate.Css
-        </button>
-                <button className="px-6 py-2 hiddenHoverBtnP HoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
-          Landing Page
-        </button>
-            </Div>
-            </Div>
-
-            <Div className="w-1/2 h-full relative group projectDivHover2" onClick={handleRedirect}>
-                          <ExploreProjectHover />
-            <div className="w-full h-h380 mt-16 relative group">
-              <img src={signUp} className="w-full h-h350 mt-16 projImgRes rounded-md" />
-              <Div className="w-full h-12 flex items-center relative mt-16">
-                <p className="text-gray-300 font-medium text-xs">May 15,2025</p>
-                <p className="absolute right-0 text-gray-300 font-medium">Tildette Project(click start free trial)</p>
-              </Div>
-              <h2 className="text-white text-4xl tracking-tight mt-10">Login and Sign-Up Auth </h2>
-              <Div className="w-full h-20 flex items-center gap-5">
-                <button className="px-6 py-2 HoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
-                  Backend In.
-                </button>
-                <button className="px-6 py-2 HoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
-                  Notification
-                </button>
-                <button className="px-6 py-2 HoverBtnP hiddenHoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
-                  OTP integration
-                </button>
-                <button className="px-6 py-2 HoverBtnP hiddenHoverBtnP rounded-full bg-black/80 border text-white border-white/20 hover:bg-black/60 transition-all duration-200">
-                  Register/Login Page
-                </button>
-              </Div>
-              </div>
-            </Div>
-          </Div>
-        </Div>
-
-<Div className="w-full h-72 bg-black Container flex items-center containerCustomX containerRog">
-  <a className="w-full"   target="_blank"
-  rel="noopener noreferrer" href="https://github.com/ExportWEB3"
->
-    <Div className="w-full h-14 group seeAllPDiv" animateOnView>
-    <p className="text-3xl font-medium seeAllPDivTxt tracking-tighter text-gray-400 group-hover:text-white transition-colors duration-200">
-      See all Projects
-    </p>
-    <hr className="border-gray-400 group-hover:border-white transition-colors duration-200 mt-3" />
-  </Div>
-</a>
-
-</Div>
-
-      <Div className="w-full h-40 bg-black Container flex items-end relative containerCustom containerRog">
-        <Div className="w-full h-32 flex items-end getDiv" animateOnView>
-          <p className="text-gray-400">( Get Started )</p>
-          <h1 className="text-8xl text-white font-medium tracking-tighter ml-80 getDivTxt">Process
-                        <span className="ml-2">
-              <span className="inline-block w-4 h-4 rounded-full bg-green-500 animate-pulse"></span>
-            </span>
-          </h1>
-          <p className="text-gray-400 absolute right-0 getDivTxtHide">( Steps 1-4 )</p>
-        </Div>
-      </Div>
-
-              <Div className="w-full h-h1900 relative z-10 bg-black flex items-center justify-center containerCustom discoMainDiv">
+              <Div className="w-full md:h-[2000px] relative flex items-center justify-center lg:px-20">
                                 <PlusGridBackground />
-        <Div className="w-2/5 h-full z-20 flex items-center absolute ml-24 flex-col discoDiv" >
-        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col space-y-7 blurDiscoDiv" animateOnView>
-        <Div className="w-full h-12 flex justify-between">
-          <p className="text-white text-4xl tracking-tighter">Discovery</p>
-        </Div>
-        <Div className="w-full h-14">
-          <p className="text-gray-400">Understanding your goals, audience, and vision to set a clear direction before Web development begins.</p>
-        </Div>
-        <Button
-        type="button"
-        btnText="Get Started"
-        className="h-10 w-32 fontBtn bg-white hover:bg-white/60"
-         />
-        </Div>
-
-        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col justify-between blurDiscoDiv" animateOnView>
-        <Div className="w-full h-12 flex justify-between">
-          <p className="text-white text-4xl tracking-tighter">OnBoarding</p>
-        </Div>
-        <Div className="w-full h-14">
-          <p className="text-gray-400">Outlining timelines, deliverables, and communication channels to ensure a smooth, aligned workflow from day one.</p>
-        </Div>
-        </Div>
-
-        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col justify-between blurDiscoDiv" animateOnView>
-        <Div className="w-full h-12 flex justify-between">
-          <p className="text-white text-4xl tracking-tighter">Strategy</p>
-        </Div>
-        <Div className="w-full h-14">
-          <p className="text-gray-400">Translating insights into structure—defining layout, content hierarchy, and user flow to guide the Website.</p>
-        </Div>
-
-        </Div>
-
-        <Div className="w-full h-72 bg-white/5 border border-white/20 rounded-3xl mt-20 backdrop-blur-sm py-10 px-5 flex flex-col justify-between blurDiscoDiv" animateOnView>
-        <Div className="w-full h-12 flex justify-between">
-          <p className="text-white text-4xl tracking-tighter">Launch</p>
-        </Div>
-        <Div className="w-full h-14">
-          <p className="text-gray-400">Bringing your vision to life—developing, testing, and refining the final product for a successful launch.</p>
-        </Div>
-        </Div>
-
-        <Div className="w-full h-80 bg-white rounded-3xl mt-20 backdrop-blur-sm py-7 px-5 flex flex-col gap-3 hover:bg-white/80" animateOnView>
-        <Div className="w-full h-12 flex">
-          <p className="text-gray-700 text-base tracking-tight">Book your free audit call today</p>
-        </Div>
-        <Div className="w-80 h-28">
-          <p className="text-black text-5xl tracking-tight font-medium">Grab the Opportunity</p>
-        </Div>
-        <Div className="w-full h-14 mt-10 flex relative">
-          <Div className="w-1/2 h-full">
-          <p className="font-medium">Get Started today</p>
-          <p className="text-gray-700">FullStack Development</p>
-          </Div>
-          <p className="text-gray-700 absolute right-0 bottom-0 text-base">( Get in touch )</p>
-        </Div>
-        </Div>
-        </Div>
-      </Div>
+                                <DiscoveryCards />
+                        </Div>
 
                  <Testimonials />
 

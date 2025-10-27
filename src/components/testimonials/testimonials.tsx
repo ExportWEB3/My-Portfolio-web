@@ -11,7 +11,7 @@ export function Testimonials () {
 
 
     return (
-        <Div className="w-full h-h1000 bg-black Container paddingT containerRog containerCustom">
+        <Div className="w-full h-[900px] sm:!h-h1000 flex flex-col justify-center Container containerRog containerCustom">
             <Div className="w-full h-40 flex items-end relative testiDiv">
                 <p className="text-gray-400">( What People Say )</p>
                 <h1 className="text-8xl font-medium tracking-tighter text-white ml-72">Testimonials
@@ -24,7 +24,7 @@ export function Testimonials () {
 
             <Div className="bg-black w-full h-h600 mt-12 space-x-3 flex p-2 testiHoldDiv">
       {/* Left side list */}
-<div className="w-1/4 h-full flex flex-col overflow-y-auto p-2 gap-3 bg-black testiHoldDivTop">
+<div className="w-1/4 h-full flex flex-col overflow-y-auto p-2 gap-1 sm:gap-3 bg-black testiHoldDivTop">
   {testimonials.map(t => (
     <div
       key={t.id}
@@ -33,7 +33,7 @@ export function Testimonials () {
         activeId === t.id ? "border ring-white/10 backdrop-blur-sm bg-white/10" : "opacity-60 hover:opacity-90"
       }`}
     >
-      <img src={t.image} alt={t.name} className="w-full h-56 object-cover" />
+      <img src={t.image} alt={t.name} className="w-full !h-56 object-cover" />
       
       {/* Bottom Gradient with Name + Icon */}
       <div className="absolute bottom-0 w-full bg-gradient-to-t from-black via-black/40 to-transparent p-2 flex items-center justify-between">
@@ -52,7 +52,7 @@ export function Testimonials () {
 
 
       {/* Right side content */}
-      <div className="w-3/4 h-full p-10 bg-white/20 border border-white/10 rounded-lg text-white flex flex-col justify-between testiHoldDivDown">
+      <div className="w-3/4 h-full p-2 sm:p-4 md:p-10 bg-white/20 border border-white/10 rounded-lg text-white flex flex-col justify-between testiHoldDivDown">
         <div>
           <h2 className="text-xl font-bold mb-2">EXPORT</h2>
           <p className="text-3xl md:text-4xl font-semibold italic mt-4 mb-6">

@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, ReactNode } from "react";
 import "./toggle.css";
 
-export function ToggleBox({ children, title }: { children?: ReactNode; title?: ReactNode }) {
+export function ToggleBoxQuestion({ children, title }: { children?: ReactNode; title?: ReactNode }) {
   const [expanded, setExpanded] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -62,7 +62,7 @@ export function ToggleBox({ children, title }: { children?: ReactNode; title?: R
       {/* Expanding Content */}
       <div
         ref={contentRef}
-        className="text-white px-4 hidden sm:flex"
+        className="text-white px-4"
         style={{
           height: "fit",
           opacity: 0,
