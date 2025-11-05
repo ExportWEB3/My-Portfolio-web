@@ -7,10 +7,23 @@ export default {
         'infinite-scroll': {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' }
+        },
+        'slideIn': {
+          '0%': { 
+            transform: 'translateX(100%)',
+            filter: 'blur(4px)',
+            opacity: '0'
+          },
+          '100%': { 
+            transform: 'translateX(0)',
+            filter: 'blur(0)',
+            opacity: '1'
+          }
         }
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 40s linear infinite',
+        'slideIn': 'slideIn 0.5s ease-out forwards'
       },
       height: {
         h70: "70%",

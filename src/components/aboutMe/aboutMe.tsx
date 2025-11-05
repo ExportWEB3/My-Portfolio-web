@@ -65,18 +65,18 @@ const handleScrollTo = (id: string) => {
 
          <Div className="w-52 h-12 flex absolute bottom-0 space-x-8">
           {/* Social Icons */}
-<a
+{/* <a
   href="https://linkedin.com/in/your-profile"
   target="_blank"
   rel="noopener noreferrer"
 >
   <Div className="w-10 h-10 cursor-pointer flex items-center justify-center rounded-lg bg-black/60 border border-white/10 group hover:bg-white transition-all ease-in-out duration-200">
-    {/* LinkedIn SVG */}
+    {/* LinkedIn SVG 
     <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white group-hover:text-black transition-colors ease-in-out duration-200" fill="currentColor" viewBox="0 0 24 24">
       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.845-1.563 3.043 0 3.604 2.004 3.604 4.609v5.587z"/>
     </svg>
   </Div>
-</a>
+</a> */}
 
 <a
   href="https://x.com/exportD_ev"
