@@ -67,6 +67,21 @@ export const projects = [
       'Monitored app health (logging, error tracking, performance monitoring) and fixed production issues',
       'Collaborated with frontend to define APIs, handle edge cases and ensure smooth integration',
     ]
+  },
+  {
+    id: 3,
+    title: 'Mitsubscription',
+    date: 'October 10, 2025',
+    description: 'Description for Project Three.',
+    image: 'src/images/localhost_3000__5.webp',
+    tags: ['FrontEnd', 'UI/UX Dev', 'Responsive Design', "Accessibility"],
+    link: 'https://mitsubscription.com/',
+    roles: [
+      'Led frontend architecture and component design using React + TypeScript',
+      'Built reusable, accessible UI components with Tailwind CSS and semantic HTML',
+      'Implemented responsive layouts and cross-browser compatibility',
+      'Optimized performance (code-splitting, lazy loading, image optimization)',
+    ]
   }
 ];
 
