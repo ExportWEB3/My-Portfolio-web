@@ -1,4 +1,6 @@
 import formualAiImg from "./assets/formula-ai-4ylf.vercel.app_.png"
+import localhostImg from "./images/localhost_3000__5.webp"
+
 
 export const testimonials = [
   {
@@ -73,7 +75,7 @@ export const projects = [
     title: 'Mitsubscription',
     date: 'October 10, 2025',
     description: 'Description for Project Three.',
-    image: 'src/images/localhost_3000__5.webp',
+    image: localhostImg,
     tags: ['FrontEnd', 'UI/UX Dev', 'Responsive Design', "Accessibility"],
     link: 'https://mitsubscription.com/',
     roles: [
