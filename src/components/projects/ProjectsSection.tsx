@@ -114,8 +114,12 @@ export function ProjectsSection({ onProjectClick }: { onProjectClick?: (project:
             return (
               <div
                 key={p.id}
-                className={`w-full ${!isMobile ? 'md:w-1/2' : 'md:w-full'} h-[40%] md:h-full relative pb-10 group space-y-3 border-2 !border-white/20 px-2 rounded-xl mb-8`}
-                onClick={() => onProjectClick?.(p)}
+                className={`w-full ${!isMobile ? 'md:w-1/2' : 'md:w-full'} h-[40%] md:h-full relative pb-10 group space-y-3 border-2 !border-white/20 px-2 rounded-xl mb-8 cursor-pointer`}
+                onClick={() => {
+                  if (p.link) {
+                    window.open(p.link, '_blank', 'noopener,noreferrer');
+                  }
+                }}
                 role="button"
               >
                 <ExploreProjectHover />

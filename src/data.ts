@@ -1,5 +1,6 @@
 import formualAiImg from "./assets/formula-ai-4ylf.vercel.app_.png"
 import localhostImg from "./images/localhost_3000__5.webp"
+import metricPulseImg from "./images/metric-0x-pulse.vercel.app_ (1).png";
 
 export const testimonials = [
   {
@@ -75,6 +76,7 @@ export const projects = [
     date: 'October 10, 2025',
     description: 'Description for Project Three.',
     image: localhostImg,
+    link: '',
     tags: ['FrontEnd', 'UI/UX Dev', 'Responsive Design', "Accessibility"],
     roles: [
       'Led frontend architecture and component design using React + TypeScript',
@@ -82,6 +84,27 @@ export const projects = [
       'Implemented responsive layouts and cross-browser compatibility',
       'Optimized performance (code-splitting, lazy loading, image optimization)',
     ]
+  },
+  {
+    id: 4,
+    title: 'MetricPulse',
+    date: 'November 18, 2025',
+    description: 'Description for Project Four.',
+    image: metricPulseImg,
+    tags: ['Full Stack', 'API Dev.', 'Database Mana.', "Authentication"],
+    link: 'https://metric-0x-pulse.vercel.app/',
+    roles: [
+  'Designed and implemented a comprehensive analytics dashboard with real-time data visualization',
+  'Built RESTful APIs for metrics tracking, MRR, churn analysis, and revenue insights',
+  'Architected database schema to efficiently store and query time-series analytics data',
+  'Implemented user authentication and role-based access control (RBAC) for secure data access',
+  'Created interactive charts and visualizations using modern charting libraries',
+  'Optimized database queries and caching strategies for fast data retrieval and performance',
+  'Built CSV upload functionality with data validation and error handling',
+  'Implemented real-time notifications and alerts for key business metrics',
+  'Designed responsive UI with dark theme for better data visibility',
+  'Integrated AI-powered analytics engine for automated insights and recommendations'
+   ],
   }
 ];
 
