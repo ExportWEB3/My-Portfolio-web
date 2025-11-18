@@ -2,6 +2,7 @@ import formualAiImg from "./assets/formula-ai-4ylf.vercel.app_.png"
 import localhostImg from "./images/localhost_3000__5.webp"
 import metricPulseImg from "./images/metric-0x-pulse.vercel.app_ (1).png";
 
+
 export const testimonials = [
   {
     id: 1,
